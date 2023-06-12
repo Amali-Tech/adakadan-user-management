@@ -1,0 +1,37 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [pgcrypto, uuid_ossp(map: "uuid-ossp")]
+}
+
+model User {
+  id             String    @id @default(uuid()) @db.Uuid
+  email          String    @unique
+  firstName      String    @map("first_name")
+  otherName      String?   @map("other_name")
+  password       String?
+  image          String?   @db.Text
+  surname        String
+  isActivated    Boolean   @default(false) @map("is_activated")
+  phoneNumber    String?   @map("phone_number")
+  role           String
+  getNewsletters Boolean   @default(false) @map("get_newsletters")
+  session        Session[]
+
+  @@map("users")
+}
+
+model Session {
+  id        String  @id @default(uuid()) @db.Uuid
+  userId    String  @map("user_id") @db.Uuid
+  valid     Boolean @default(true)
+  userAgent String  @map("user_agent")
+  user      User    @relation(fields: [userId], references: [id])
+
+  @@map("sessions")
+}

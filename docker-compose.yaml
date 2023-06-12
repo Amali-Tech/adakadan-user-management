@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  user-management:
+    container_name: user-management
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=development
+    build:
+        context: ./
+    ports:
+     - 3000:3000
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - effiekwanso:/var/postgresql/data
+volumes:
+  effiekwanso:
