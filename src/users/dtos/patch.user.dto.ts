@@ -9,4 +9,5 @@ export interface IPatchUserDto {
   isActivated: boolean;
   getNewsletter: boolean;
   phone: string;
+  profileImage:string;
 }

@@ -12,7 +12,7 @@ export class Template {
         * {
           box-sizing: border-box;
         }
-        
+
         body {
           margin: 0;
           padding: 0;
@@ -176,10 +176,10 @@ export class Template {
                                   <td class="pad">
                                     <div style="font-family: sans-serif">
                                       <div class style="font-size: 12px; font-family: Georgia, Times, 'Times New Roman', serif; mso-line-height-alt: 18px; color: #555555; line-height: 1.5;">
-                                        <p style="margin: 0; font-size: 12px; text-align: right; mso-line-height-alt: 21px;"><span style="font-size:14px;color:#6f6d6d;">You are receiving this email because you started the registration process on the EfieKwanso🏡 Platform.</span></p>
+                                        <p style="margin: 0; font-size: 12px; text-align: right; mso-line-height-alt: 21px;"><span style="font-size:14px;color:#6f6d6d;">You are receiving this email because you started the registration process on the Adakadan🏡 Platform.</span></p>
                                         <p style="margin: 0; font-size: 12px; text-align: right; mso-line-height-alt: 21px;"><span style="font-size:14px;color:#6f6d6d;">The link will expire in 24 hours. Not interested? Ignore this message.</span></p>
                                         <p style="margin: 0; font-size: 12px; text-align: center; mso-line-height-alt: 18px;">&nbsp;</p>
-                                        <p style="margin: 0; font-size: 12px; mso-line-height-alt: 18px;"><em><span style="font-size:14px;">EffieKwanso🏡 | Hapa Street, Saux City,<br>Contact: +233 542352886<br>email</span></em></p>
+                                        <p style="margin: 0; font-size: 12px; mso-line-height-alt: 18px;"><em><span style="font-size:14px;">Adakadan Properties🏡 | Hapa Street, Saux City,<br>Contact: +233 542352886<br>email</span></em></p>
                                       </div>
                                     </div>
                                   </td>
@@ -206,7 +206,7 @@ export class Template {
                                   <td class="pad" style="padding-bottom:10px;padding-left:30px;padding-right:10px;padding-top:10px;">
                                     <div style="font-family: sans-serif">
                                       <div class style="font-size: 12px; font-family: Georgia, Times, 'Times New Roman', serif; mso-line-height-alt: 14.399999999999999px; color: #FFFFFF; line-height: 1.2;">
-                                        <p style="margin: 0; font-size: 14px; mso-line-height-alt: 16.8px;">Copyright© 2021 EffieKWanso Rentals🏡.</p>
+                                        <p style="margin: 0; font-size: 14px; mso-line-height-alt: 16.8px;">Copyright© 2023 Adakadan Properties🏡.</p>
                                       </div>
                                     </div>
                                   </td>
@@ -406,7 +406,7 @@ export class Template {
                                 <td class="pad">
                                   <div style="font-family: sans-serif">
                                     <div class style="font-size: 14px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; mso-line-height-alt: 16.8px; color: #40507a; line-height: 1.2;">
-                                      <p style="margin: 0; font-size: 14px; mso-line-height-alt: 16.8px;"><span style="font-size:16px;">Let’s get you a new one!<br>The EffieKwanso🏡 Team</span></p>
+                                      <p style="margin: 0; font-size: 14px; mso-line-height-alt: 16.8px;"><span style="font-size:16px;">Let’s get you a new one!<br>The Adakadan🏡 Team</span></p>
                                     </div>
                                   </div>
                                 </td>
@@ -510,7 +510,7 @@ export class Template {
                                 <td class="pad">
                                   <div style="font-family: sans-serif">
                                     <div class style="font-size: 14px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; mso-line-height-alt: 16.8px; color: #97a2da; line-height: 1.2;">
-                                      <p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 16.8px;">This link will expire in the next 24 hours.<br>Please feel free to contact us at effiekwanso@gmail.com.</p>
+                                      <p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 16.8px;">This link will expire in the next 24 hours.<br>Please feel free to contact us at adakadan@gmail.com.</p>
                                     </div>
                                   </div>
                                 </td>
@@ -521,7 +521,7 @@ export class Template {
                                 <td class="pad">
                                   <div style="font-family: sans-serif">
                                     <div class style="font-size: 14px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; mso-line-height-alt: 16.8px; color: #97a2da; line-height: 1.2;">
-                                      <p style="margin: 0; text-align: center; font-size: 12px; mso-line-height-alt: 14.399999999999999px;"><span style="font-size:12px;">Copyright© 2021 EffieKWanso Rentals🏡.</span></p>
+                                      <p style="margin: 0; text-align: center; font-size: 12px; mso-line-height-alt: 14.399999999999999px;"><span style="font-size:12px;">Copyright© 2023 Adakadan Properties🏡.</span></p>
                                     </div>
                                   </div>
                                 </td>

@@ -1,22 +1,26 @@
 version: "3.7"
 services:
-  user-management:
-    container_name: user-management
+  adakadan:
+    build: .
+    image: adakan-user-management-api
     restart: unless-stopped
-    environment:
-      - NODE_ENV=development
-    build:
-        context: ./
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["yarn", "start"]
     ports:
-     - 3000:3000
-  postgres:
-    image: postgres:15
+    - "3000:3000"
+  db:
+    image: postgres
+    restart: always
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      POSTGRES_PASSWORD: Pielly16
+      POSTGRES_USER: postgres
+      POSTGRES_DB: adakadan
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 1s
+      timeout: 30s
+      retries: 5
     ports:
-      - 5432:5432
-    volumes:
-      - effiekwanso:/var/postgresql/data
-volumes:
-  effiekwanso:
+      - "5432:5432"

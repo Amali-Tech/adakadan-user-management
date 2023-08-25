@@ -1,14 +1,15 @@
-import express from "express";
-import { UsersRoutes } from "../users/users.route.config";
-import cors from "cors";
-import { CommonRoutesConfig } from "../common/common.routes.config";
-import debug from "debug";
-import * as winston from "winston";
-import * as expressWinston from "express-winston";
-import helmet from "helmet";
+import express from 'express';
+import { UsersRoutes } from '../users/users.route.config';
+import { SessionsRoutes } from '../users/sessions.route.config';
+import cors from 'cors';
+import { CommonRoutesConfig } from '../common/common.routes.config';
+import debug from 'debug';
+import * as winston from 'winston';
+import * as expressWinston from 'express-winston';
+import helmet from 'helmet';
+import errorHandler from './errorHandler';
 
-
-const debugLog: debug.IDebugger = debug("app:configuration");
+const debugLog: debug.IDebugger = debug('app:configuration');
 // here we are preparing the expressWinston logging middleware configuration,
 // which will automatically log all HTTP requests handled by Express.js
 const loggerOptions: expressWinston.LoggerOptions = {
@@ -24,23 +25,27 @@ const loggerOptions: expressWinston.LoggerOptions = {
 if (!process.env.DEBUG) {
   loggerOptions.meta = false; // when not debugging, log requests as one-liners
   if (typeof global.it === 'function') {
-           loggerOptions.level = 'http'; // for non-debug test runs, squelch entirely
-       }
+    loggerOptions.level = 'http'; // for non-debug test runs, squelch entirely
+  }
 }
 
 class App {
   public app: express.Application;
 
   private userRoutes: UsersRoutes;
+  private sessionsRoutes: SessionsRoutes;
   private definedRoutes: Array<CommonRoutesConfig> = [];
 
   constructor() {
     this.app = express();
     this.config();
     this.userRoutes = new UsersRoutes(this.app);
+    this.sessionsRoutes = new SessionsRoutes(this.app);
+    this.handleError();
+
     // here we are adding the UserRoutes to our array,
     // after sending the Express.js application object to have the routes added to our app!
-    this.definedRoutes.push(this.userRoutes);
+    this.definedRoutes.push(this.userRoutes, this.sessionsRoutes);
 
     this.debugger();
   }
@@ -52,11 +57,23 @@ class App {
     this.app.use(express.urlencoded({ extended: false }));
     // here we are adding middleware to allow cross-origin requests
     this.app.use(cors());
-    this.app.use(helmet())
+    this.app.use(helmet());
+    // this.app.use(compression)
     // initialize the logger with the above configuration
     this.app.use(expressWinston.logger(loggerOptions));
   }
-
+  private handleError() {
+    this.app.use(
+      async (
+        err: Error,
+        req: express.Request,
+        res: express.Response,
+        next: express.NextFunction
+      ) => {
+        await errorHandler.handleError(err, res);
+      }
+    );
+  }
   private debugger(): void {
     this.definedRoutes.forEach((route: CommonRoutesConfig) => {
       debugLog(`Routes configured for ${route.getName()}`);

@@ -1,4 +1,4 @@
-import  users  from './users';
+import users from './users';
 import prisma from '../src/prisma';
 
 async function main() {
