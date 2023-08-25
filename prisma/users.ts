@@ -1,20 +1,17 @@
- 
- import bcrypt from "bcrypt";
+import bcrypt from 'bcrypt';
 
+const salt = bcrypt.genSaltSync(+process.env.SALT_ROUND!);
+const password = bcrypt.hashSync('Pielly16$', salt);
 
-const salt =  bcrypt.genSaltSync(+(process.env.SALT_ROUND as string));
-const password =  bcrypt.hashSync("1994", salt);
-
- const  users = [
+const users = [
   {
     firstName: 'John',
     surname: 'Doe',
-    email: 'doe@example.com',
-    role: "Admin",
+    email: 'pielly16@gmail.com',
+    accountType: 'Admin',
     password,
-    isActivated: true
+    isActivated: true,
+  },
+];
 
-  }
-]
-
-export  default users
+export default users;

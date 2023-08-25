@@ -5,6 +5,7 @@ import jwtUtils from '../../helpers/jwt';
 import { get } from 'lodash';
 import { validationResult } from 'express-validator';
 import sessionsService from '../services/sessions.service';
+import { AppError, HttpCode } from '../../config/errorHandler';
 
 const log: debug.IDebugger = debug('app:users-middleware');
 class UsersMiddleware {
@@ -13,25 +14,34 @@ class UsersMiddleware {
     res: express.Response,
     next: express.NextFunction
   ) {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).send({ success: false, errors: errors.array() });
+    try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).send({ success: false, errors: errors.array() });
+      }
+      next();
+    } catch (err) {
+      next(err);
     }
-    next();
   }
   async checkConfirmPassword(
     req: express.Request,
     res: express.Response,
     next: express.NextFunction
   ) {
-    const isMatch = req.body.password === req.body.confirmPassword;
-    if (!isMatch) {
-      return res.status(400).send({
-        success: false,
-        message: 'Password and Confirm Password do not match',
-      });
+    try {
+      const isMatch = req.body.password === req.body.confirmPassword;
+      if (!isMatch) {
+        throw new AppError({
+          httpCode: HttpCode.NOT_FOUND,
+          description: 'Password and confirm password do not match',
+          isOperational: true,
+        });
+      }
+      next();
+    } catch (err) {
+      next(err);
     }
-    next();
   }
 
   async validateSameEmailDoesntExist(
@@ -39,84 +49,121 @@ class UsersMiddleware {
     res: express.Response,
     next: express.NextFunction
   ) {
-    const user = await userService.getUserByEmail(req.body.email);
-    if (user) {
-      res.status(400).send({ error: `User email already exists` });
-    } else {
-      next();
+    try {
+      const user = await userService.getUserByEmail(req.body.email);
+      if (user) {
+        throw new AppError({
+          httpCode: HttpCode.BAD_REQUEST,
+          description: 'User email already exist',
+          isOperational: true,
+        });
+      } else {
+        next();
+      }
+    } catch (err) {
+      next(err);
     }
   }
-
   async validateSameEmailBelongToSameUser(
     req: express.Request,
     res: express.Response,
     next: express.NextFunction
   ) {
-    const user = await userService.getUserByEmail(req.body.email);
+    try {
+      const user = await userService.getUserByEmail(req.body.email);
 
-    if (user && user.id == req.params.userId) {
-      next();
-    } else {
-      res.status(400).send({ error: `Invalid email` });
+      if (user && user.id == req.params.userId) {
+        next();
+      } else {
+        throw new AppError({
+          httpCode: HttpCode.BAD_REQUEST,
+          description: 'Invalid email',
+          isOperational: true,
+        });
+      }
+    } catch (err) {
+      next(err);
     }
   }
-
 
   async validateUserExists(
     req: express.Request,
     res: express.Response,
     next: express.NextFunction
   ) {
-
-    const user = await userService.readById(req.params.userId);
-    if (user) {
-      next();
-    } else {
-      res.status(404).send({
-        error: `User ${req.params.userId} not found`,
+    try {
+      const user = await userService.readById(req.params.userId);
+      if (user) {
+        next();
+      }
+      throw new AppError({
+        httpCode: HttpCode.NOT_FOUND,
+        description: `User ${req.params.userId} not found`,
+        isOperational: true,
       });
+    } catch (err) {
+      next(err);
     }
   }
-  async extractUserId(
+  async requireUser(
     req: express.Request,
     res: express.Response,
     next: express.NextFunction
   ) {
-    req.body.id = req.params.userId;
-    next();
+    try {
+      const user = res.locals.user;
+      if (!user) {
+        throw new AppError({
+          httpCode: HttpCode.UNAUTHORIZED,
+          description: 'Please login',
+          isOperational: true,
+        });
+      }
+      return next();
+    } catch (err) {
+      next(err);
+    }
   }
-
   async deserializeUser(
     req: express.Request,
     res: express.Response,
     next: express.NextFunction
   ) {
-    const acessToken = get(req, 'headers.authorization', '').replace(
-      /^Bearer\s/,
-      ''
-    );
+    try {
+      const acessToken = get(req, 'headers.authorization', '').replace(
+        /^Bearer\s/,
+        ''
+      );
+      const refreshToken: string = get(req, 'headers.x-refresh') as string;
 
-    const refreshToken: string = get(req, 'headers.x-refresh') as string;
-
-    if (!acessToken) {
-     return next();
-    }
-    const { decoded, expired } = await jwtUtils.verifyJWT(acessToken);
-    if (decoded) {
-      res.locals.user = decoded;
-      return next();
-    }
-    if (expired && refreshToken) {
-      const newAccessToken  = await sessionsService.reIssueAccessToken({
-        refreshToken,
-      }) ;
-      if (newAccessToken) {
-        res.setHeader('x-access-token', newAccessToken as string);
+      if (!acessToken) {
+        return next();
       }
-      const result = await jwtUtils.verifyJWT(newAccessToken as string);
-      res.locals.user = result.decoded;
+      const { decoded, expired } = await jwtUtils.verifyJWT(
+        acessToken,
+        process.env.ACCESS_TOKEN_SECRET
+      );
+      if (decoded) {
+        res.locals.user = decoded;
+        return next();
+      }
+      if (expired && refreshToken) {
+        const newAccessToken = await sessionsService.reIssueAccessToken({
+          refreshToken,
+        });
+        if (newAccessToken) {
+          res.setHeader('x-access-token', newAccessToken as string);
+        }
+        const result = await jwtUtils.verifyJWT(
+          newAccessToken as string,
+          process.env.ACCESS_TOKEN_SECRET
+        );
+        res.locals.user = result.decoded;
+      }
+      return next();
+    } catch (err) {
+      next(err);
     }
-    return next();
   }
 }
 

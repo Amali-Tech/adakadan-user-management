@@ -4,23 +4,15 @@ import usersService from './users.service';
 import jwtUtils from '../../helpers/jwt';
 
 class SessionsService {
-  async createSession(userId: string, userAgent: string): Promise<any> {
-    const session = await prisma.session.create({
+  async createSession(userId: string, userAgent: string) {
+    return prisma.session.create({
       data: { userId: userId, userAgent: userAgent },
     });
-    return session;
   }
-  async getUserSessions({
-    userId,
-    valid,
-  }: {
-    userId: string;
-    valid: boolean;
-  }): Promise<any> {
-    const session = await prisma.session.findFirst({
+  async getUserSession({ userId, valid }: { userId: string; valid: boolean }) {
+    return prisma.session.findFirst({
       where: { AND: [{ valid }, { userId }] },
     });
-    return session;
   }
   async updateUserSessions({
     sessionId,
@@ -28,19 +20,21 @@ class SessionsService {
   }: {
     sessionId: string;
     valid: boolean;
-  }): Promise<any> {
-    const session = await prisma.session.update({
+  }) {
+    return prisma.session.update({
       data: { valid },
       where: { id: sessionId },
     });
-    return session;
   }
   async reIssueAccessToken({
     refreshToken,
   }: {
     refreshToken: string;
   }): Promise<boolean | string> {
-    const { decoded } = await jwtUtils.verifyJWT(refreshToken);
+    const { decoded } = await jwtUtils.verifyJWT(
+      refreshToken,
+      process.env.REFRESH_TOKEN_SECRET
+    );
 
     if (!decoded || !get(decoded, 'session')) return false;
 
@@ -64,17 +58,12 @@ class SessionsService {
   }: {
     email: string;
     password: string;
-  }): Promise<any> {
-
-    console.log(email, password)
+  }) {
     const user = await usersService.getUserByEmail(email.toLowerCase().trim());
     if (!user || !user.isActivated) {
       return false;
     }
-    const isValid = await usersService.comparePassword(
-      password,
-      user.password
-    );
+    const isValid = await usersService.comparePassword(password, user.password);
     if (!isValid) return false;
     return omit(user, ['password']);
   }

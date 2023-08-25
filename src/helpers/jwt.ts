@@ -6,7 +6,7 @@ config();
 
 class JWTUtils {
   
-  signJWT = async (object: Object, options?: jwt.SignOptions | undefined) => {
+  signJWT = async (object:object, options?: jwt.SignOptions | undefined) => {
     const token: string = jwt.sign(
       object,
       process.env.ACCESS_TOKEN_SECRET ,
@@ -14,15 +14,16 @@ class JWTUtils {
     );
     return token;
   };
-  refreshToken = async (user: { id: string; role: string }) => {
+  refreshToken = async (object:  object, options?: jwt.SignOptions | undefined) => {
     const token: string = jwt.sign(
-      { id: user.id, userType: user.role },
-      process.env.REFRESH_TOKEN_SECRET 
+      object,
+      process.env.REFRESH_TOKEN_SECRET,
+      {...options}
     );
     return token;
   };
 
-  verifyJWT = async (token: string) :Promise<{
+  verifyJWT = async (token: string, secret: string) :Promise<{
     valid: boolean,
     expired: boolean | string ,
     decoded: JwtPayload | null
@@ -57,10 +58,7 @@ class JWTUtils {
   };
   hasExpired = async (token: string) => {
     const payload = jwt.decode(token) as JwtPayload;
-    const now = Date.now();
-    const date = new Date(now);
-    console.log(payload.exp, date.getTime());
-    return (payload.exp ) > date.getTime();
+    return (payload.exp ) > Date.now();
   };
 }
 

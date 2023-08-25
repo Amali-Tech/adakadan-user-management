@@ -2,10 +2,8 @@ import express from 'express';
 import { CommonRoutesConfig } from '../common/common.routes.config';
 import usersController from './controller/users.controller';
 import usersMiddleware from './middleware/users.middleware';
-import requireUser from '../helpers/requireUser';
 import authorise from '../helpers/auth';
 import { body } from 'express-validator';
-import sessionsController from './controller/sessions.controller';
 
 export class UsersRoutes extends CommonRoutesConfig {
   constructor(app: express.Application) {
@@ -13,7 +11,6 @@ export class UsersRoutes extends CommonRoutesConfig {
   }
 
   configureRoutes() {
-    this.app.route(`/user`).post(sessionsController.createSession);
     this.app.route(`/user/activate/:token`).get(usersController.activateUser);
     this.app
       .route(`/user/forgot-password`)
@@ -55,38 +52,36 @@ export class UsersRoutes extends CommonRoutesConfig {
           .isString()
           .notEmpty()
           .withMessage('Confirm is required'),
-        body('role')
-          .isIn(['Admin', 'Owner', 'Agent', 'Tenant'])
-          .withMessage(`Role can either be Admin, Owner, Agent and Tenant only`)
+        body('AccountType')
+          .isIn(['Client', 'Managemant'])
+          .withMessage(`Role can either be Client or Management`)
           .notEmpty()
-          .withMessage('Role is required'),
+          .withMessage('AccountType is required'),
         usersMiddleware.verifyRequestFieldsErrors,
         usersMiddleware.validateSameEmailDoesntExist,
         usersController.createUser
       );
-    this.app.use(usersMiddleware.deserializeUser);
-    this.app.use(requireUser);
+    this.app.use('/users', usersMiddleware.deserializeUser);
+    this.app.use('/users', usersMiddleware.requireUser);
     this.app
       .route(`/users`)
       .get(authorise.adminOnly, usersController.listUsers);
-    this.app.param(`userId`, usersMiddleware.extractUserId);
     this.app
-      .route(`/user/:userId`)
+      .route(`/users/:userId`)
       .patch(
         body('firstName').optional().isString(),
         body('otherName').optional().isString(),
         body('surname').optional().isString(),
-        body('role').optional()
-          .isIn(['Admin', 'Owner', 'Agent', 'Tenant'])
+        body('AccountType')
+          .optional()
+          .isIn(['Management', 'Client'])
           .withMessage(
-            `Role can either be Admin, Owner, Agent and Tenant only`
+            `Account can either be Management, Agent and Client only`
           ),
         usersMiddleware.verifyRequestFieldsErrors,
         usersController.patch
       )
-      .get(usersController.getUserById)
-      .delete(sessionsController.deleteUserSession);
-
+      .get(usersController.getUserById);
     this.app
       .route(`/users/:userId`)
       .all(usersMiddleware.validateUserExists, authorise.adminOnly)
@@ -100,6 +95,25 @@ export class UsersRoutes extends CommonRoutesConfig {
         usersMiddleware.validateSameEmailBelongToSameUser,
         usersController.patch
       );
+    this.app
+      .route(`/users/:userId/profileImages`)
+      .get(usersController.getCloudinarySignature)
+      .patch(
+        body('version')
+          .isString()
+          .notEmpty()
+          .withMessage('Cloudinary version is required'),
+        body('public_id')
+          .isString()
+          .notEmpty()
+          .withMessage('Cloudinary public id is required'),
+        body('signature')
+          .isString()
+          .notEmpty()
+          .withMessage('Cloudinary signature is required'),
+        usersController.addProfilePic
+      )
+      .delete(usersController.deleteProfilePic);
 
     return this.app;
   }
