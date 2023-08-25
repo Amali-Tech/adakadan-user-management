@@ -38,6 +38,8 @@ export class AppError extends Error {
 }
 
  class ErrorHandler {
+
+  // configure log format
   private logFormat = winston.format.combine(
     winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
     winston.format.json(),
@@ -49,31 +51,37 @@ export class AppError extends Error {
     format: this.logFormat,
     transports: [
       new winston.transports.Console(),
-      new winston.transports.File({level:"error", filename: 'error.log' }), // Change the filename as needed
+      new winston.transports.File({level:"error", filename: 'error.log' }), // log to file
     ],
   });
-
+//send mail to admin when error logs file
   private async sendMailToAdmin(err: AppError | Error) {
    await sendMail([process.env.ADMIN_MAIL], 'Server Error', err.message, [
       { filename: 'error.log', path: './error.log' },
     ]);
   }
 
+// check if error is operational
   private isTrustedError(err: Error) {
     if (err instanceof AppError) {
       return err.isOperational;
     }
     return false;
   }
+
+  // handle trusted errors
   private handleTrustedError(err: AppError, res: express.Response) {
     res.status(err.httpCode).send({ message: err.message });
   }
+  // handle untrusted errors
   private handleCriticalError(err: Error | AppError, res?: express.Response) {
+    //send response if response object exists
     if (res) {
       res
         .status(HttpCode.INTERNAL_SERVER_ERROR)
         .send({ message: 'Internal Server Error' });
     }
+    //finally exit the process
     process.exit(1);
   }
   async handleError(
