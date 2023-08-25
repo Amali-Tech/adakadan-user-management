@@ -2,7 +2,7 @@ version: "3.7"
 services:
   adakadan:
     build: .
-    image: adakan-user-management-api
+    image: adakadan-user-management-api
     restart: unless-stopped
     depends_on:
       db:

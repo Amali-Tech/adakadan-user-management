@@ -1,6 +1,6 @@
 FROM node:alpine
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package.json yarn.lock ./
 
@@ -8,7 +8,7 @@ COPY . .
 
 RUN yarn install
 
-EXPOSE 3000
+ENV PORT=3000
 
 RUN yarn build
 

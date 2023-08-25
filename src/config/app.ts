@@ -7,6 +7,7 @@ import debug from 'debug';
 import * as winston from 'winston';
 import * as expressWinston from 'express-winston';
 import helmet from 'helmet';
+import compression from 'compression';
 import errorHandler from './errorHandler';
 
 const debugLog: debug.IDebugger = debug('app:configuration');
@@ -57,11 +58,14 @@ class App {
     this.app.use(express.urlencoded({ extended: false }));
     // here we are adding middleware to allow cross-origin requests
     this.app.use(cors());
+    //helmet for security purposes
     this.app.use(helmet());
-    // this.app.use(compression)
+    // compression for lighter and fast response 
+    this.app.use(compression())
     // initialize the logger with the above configuration
     this.app.use(expressWinston.logger(loggerOptions));
   }
+  //centralise error handler
   private handleError() {
     this.app.use(
       async (
@@ -74,6 +78,7 @@ class App {
       }
     );
   }
+  //log routes all routes
   private debugger(): void {
     this.definedRoutes.forEach((route: CommonRoutesConfig) => {
       debugLog(`Routes configured for ${route.getName()}`);
