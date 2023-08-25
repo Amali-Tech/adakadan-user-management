@@ -12,7 +12,6 @@ export class Template {
         * {
           box-sizing: border-box;
         }
-    
         body {
           margin: 0;
           padding: 0;
