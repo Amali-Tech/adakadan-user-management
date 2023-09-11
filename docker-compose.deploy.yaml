@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  adakadan:
+    build: .
+    image: adakadan-user-management-api
+    restart: always
+    command: ["yarn", "start"]
+    ports:
+    - "3000:3000"
+
