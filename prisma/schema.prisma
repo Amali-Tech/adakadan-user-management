@@ -1,37 +1,57 @@
 generator client {
-  provider = "prisma-client-js"
-  // previewFeatures = ["postgresqlExtensions"]
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
 }
 
 datasource db {
-  provider = "sqlite"
-  url      =  env("DATABASE_URL")
-  // extensions = [pgcrypto, uuid_ossp(map: "uuid-ossp")]
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [pgcrypto, uuid_ossp(map: "uuid-ossp")]
 }
 
 model User {
-  id             String    @id @default(uuid()) 
-  email          String    @unique 
-  firstName      String    @map("first_name") 
-  otherName      String?   @map("other_name") 
-  password       String?   
-  surname        String   
-  isActivated    Boolean   @default(false) @map("is_activated")
-  phoneNumber    String?   @map("phone_number") 
-  accountType    String    
-  getNewsletters Boolean   @default(false) @map("get_newsletters")
-  profileImage   String?   @map("profile_image") 
+  id             String       @id @default(uuid())
+  email          String       @unique @db.Char(150)
+  firstName      String       @map("first_name") @db.Char(150)
+  otherName      String?      @map("other_name") @db.Char(150)
+  password       String?      @db.Char(250)
+  surname        String       @db.Char(150)
+  isActivated    Boolean      @default(false) @map("is_activated")
+  online         Boolean      @default(false)
+  phoneNumber    String?      @map("phone_number") @db.Char(50)
+  accountType    String
+  getNewsletters Boolean      @default(false) @map("get_newsletters")
+  profileImage   String?      @map("profile_image") @db.Char(250)
   session        Session[]
+  Credential     Credential[]
+  createdAt      DateTime     @default(now()) @db.Timestamptz()
+  updatedAt      DateTime     @updatedAt @db.Timestamptz()
 
   @@map("users")
 }
 
+model Credential {
+  id                     String   @id @default(uuid())
+  contact                String?  @db.Char(150)
+  location               String?  @db.Char(150)
+  landmark               String?  @db.Char(150)
+  authenticationDocument String?  @map("authentication_document") @db.Char(250)
+  userId                 String
+  user                   User?    @relation(fields: [userId], references: [id])
+  createdAt              DateTime @default(now()) @db.Timestamptz()
+  updatedAt              DateTime @updatedAt @db.Timestamptz()
+
+  @@map("managements")
+}
+
 model Session {
-  id        String  @id @default(uuid()) 
-  userId    String  @map("user_id")
-  valid     Boolean @default(true)
-  userAgent String  @map("user_agent")
-  user      User    @relation(fields: [userId], references: [id])
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  valid     Boolean  @default(true)
+  userAgent String   @map("user_agent")@db.Char(250)
+  user      User     @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now()) @db.Timestamptz()
+  updatedAt DateTime @updatedAt @db.Timestamptz()
 
   @@map("sessions")
 }

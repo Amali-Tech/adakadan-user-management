@@ -53,7 +53,7 @@ export class UsersRoutes extends CommonRoutesConfig {
           .notEmpty()
           .withMessage('Confirm is required'),
         body('AccountType')
-          .isIn(['Client', 'Managemant'])
+          .isIn(['Client', 'Management'])
           .withMessage(`Role can either be Client or Management`)
           .notEmpty()
           .withMessage('AccountType is required'),
