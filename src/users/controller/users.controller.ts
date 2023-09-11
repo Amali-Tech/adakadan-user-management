@@ -51,14 +51,14 @@ class UserController {
         (err, emailToken) => {
           const activateUserMail = template.activate(
             user.firstName,
-            `${process.env.USER_URL}/activate/${emailToken}`
+            `${process.env.USER_URL}/${user.accountType}/activate/${emailToken}`
           );
           sendMail([user.email], template.activateSubject, activateUserMail);
         }
       );
       res.status(201).send({
         success: true,
-        data: `Please activate your account with the link sent ${user.email}`,
+        data: `Please activate your account with the link sent to ${user.email}`,
       });
     } catch (err: any) {
       next(err);

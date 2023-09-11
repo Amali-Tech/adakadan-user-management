@@ -32,8 +32,8 @@ class UsersService implements CRUD {
   async deleteById(id: string) {
     await prisma.user.delete({ where: { id } });
   }
-  async list(query?: Record<string, string>) {
-    let users;
+  async list(query?: Record<string, string | boolean>) {
+    let users: unknown[];
     if (query) {
       const page = query.page ? +query.page - 1 : 0;
       const skip = +query.limit * page;
@@ -44,7 +44,7 @@ class UsersService implements CRUD {
     }
     let usersWithoutPassword: Record<string, unknown>[] = [];
     for (const user of users) {
-      usersWithoutPassword.push(omit(user, ['password']));
+      usersWithoutPassword.push(omit(user, ['password', "isActivated"]));
     }
     return usersWithoutPassword;
   }

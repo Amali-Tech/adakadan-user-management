@@ -65,7 +65,7 @@ class SessionsService {
     }
     const isValid = await usersService.comparePassword(password, user.password);
     if (!isValid) return false;
-    return omit(user, ['password']);
+    return omit(user, ['password', "isActivated"]);
   }
 }
 
