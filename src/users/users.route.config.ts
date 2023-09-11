@@ -11,29 +11,43 @@ export class UsersRoutes extends CommonRoutesConfig {
   }
 
   configureRoutes() {
-    this.app.route(`/user/activate/:token`).get(usersController.activateUser);
+    this.app.route(`/user/activate/:token`).post(
+      body('password')
+        .isString()
+        .notEmpty()
+        .withMessage('Password is required'),
+      body('confirmPassword')
+        .custom((value, { req }) => {
+          return value == req.body.passwor;
+        })
+        .withMessage('Passwords is must be the same')
+        .isString()
+        .notEmpty()
+        .withMessage('Confirm is required'),
+      usersController.activateUser
+    );
     this.app
       .route(`/user/forgot-password`)
       .post(usersController.forgotPassword);
-    this.app
-      .route(`/user/reset-password/:token`)
-      .post(
-        body('password')
-          .isString()
-          .notEmpty()
-          .withMessage('Password is required'),
-        body('confirmPassword')
-          .isString()
-          .notEmpty()
-          .withMessage('Confirm is required'),
-        usersMiddleware.verifyRequestFieldsErrors,
-        usersMiddleware.checkConfirmPassword,
-        usersController.newPassword
-      );
+    this.app.route(`/user/reset-password/:token`).post(
+      body('password')
+        .isString()
+        .notEmpty()
+        .withMessage('Password is required'),
+      body('confirmPassword')
+        .custom((value, { req }) => {
+          return value == req.body.passwor;
+        })
+        .withMessage('Passwords is must be the same')
+        .isString()
+        .notEmpty()
+        .withMessage('Confirm is required'),
+      usersMiddleware.verifyRequestFieldsErrors,
+      usersController.newPassword
+    );
     this.app
       .route(`/users`)
       .post(
-        usersMiddleware.checkConfirmPassword,
         body('firstName')
           .isString()
           .notEmpty()
@@ -44,14 +58,6 @@ export class UsersRoutes extends CommonRoutesConfig {
           .notEmpty()
           .withMessage('Surname is required'),
         body('email').isEmail().notEmpty().withMessage('Email is required'),
-        body('password')
-          .isString()
-          .notEmpty()
-          .withMessage('Password is required'),
-        body('confirmPassword')
-          .isString()
-          .notEmpty()
-          .withMessage('Confirm is required'),
         body('AccountType')
           .isIn(['Client', 'Management'])
           .withMessage(`Role can either be Client or Management`)

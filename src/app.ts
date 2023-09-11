@@ -8,20 +8,22 @@ config();
 
 const server: http.Server = http.createServer(app);
 const port = process.env.PORT ?? 3000;
-const host = +process.env.HOST || "localhost";
 const log: debug.IDebugger = debug("app");
 
 
 // this is a simple route to make sure everything is working properly
 
-const runningMessage = `Server running at http://localhost:${port}`;
+const runningMessage = `Server running 👨‍💻 at http://localhost:${port}`;
 app.get("/", (req: express.Request, res: express.Response) => {
   res.status(200).send(runningMessage);
+});
+app.use("*", (req: express.Request, res: express.Response) => {
+  res.status(404).send("Page not found 🖐🏽");
 });
 
 (async () => {
 
-  server.listen(port,+host, () => {
+  server.listen(port, () => {
     // our only exception to avoiding console.log(), because we
     // always want to know when the server is done starting up
     log(runningMessage);

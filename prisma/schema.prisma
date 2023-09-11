@@ -48,7 +48,7 @@ model Session {
   id        String   @id @default(uuid())
   userId    String   @map("user_id")
   valid     Boolean  @default(true)
-  userAgent String   @map("user_agent")@db.Char(250)
+  userAgent String   @map("user_agent") @db.Char(250)
   user      User     @relation(fields: [userId], references: [id])
   createdAt DateTime @default(now()) @db.Timestamptz()
   updatedAt DateTime @updatedAt @db.Timestamptz()
