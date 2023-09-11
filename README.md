@@ -34,7 +34,7 @@ Follow these steps to set up the project locally:
 
   ```bash
     yarn install
-
+```
 
 ## Tools And Technology
 
