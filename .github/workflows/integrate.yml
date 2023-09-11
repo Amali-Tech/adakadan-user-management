@@ -31,3 +31,4 @@ jobs:
     - run: yarn run build
     - run: node --version
     - run: yarn --version
+    - run: yarn run dev
