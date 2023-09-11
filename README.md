@@ -7,6 +7,7 @@ A powerful and flexible backend system for managing land, space, studio, or apar
 ## Table of Contents
 
 - [Features](#features)
+- [Tools and Technology](#tools-and-technology)
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
@@ -21,6 +22,16 @@ A powerful and flexible backend system for managing land, space, studio, or apar
 - **Powerful API**: A robust RESTful API for seamless integration with your frontend application.
 - **Security**: Implement best practices for securing user data and authentication with JWT.
 
+## Tools And Technology
+
+1. Typescript
+2. Express Framework
+3. Prisma ORM
+4. Postgres Database (AWS RDS)
+5. Docker
+
+
+
 ## Installation
 
 Follow these steps to set up the project locally:
@@ -33,13 +44,5 @@ Follow these steps to set up the project locally:
 2. **Install Packages**:
 
   ```bash
-    yarn install
-```
+    yarn install 
 
-## Tools And Technology
-
-1. Typescript
-2. Express Framework
-3. Prisma ORM
-4. Postgres Database (AWS RDS)
-5. Docker
