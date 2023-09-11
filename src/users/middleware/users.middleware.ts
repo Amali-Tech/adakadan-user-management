@@ -17,27 +17,8 @@ class UsersMiddleware {
     try {
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
-        throw new AppError({httpCode:HttpCode.BAD_REQUEST, description:errors.array().toString()});
-        // return res.status(400).send({ success: false, errors: errors.array() });
-      }
-      next();
-    } catch (err) {
-      next(err);
-    }
-  }
-  async checkConfirmPassword(
-    req: express.Request,
-    res: express.Response,
-    next: express.NextFunction
-  ) {
-    try {
-      const isMatch = req.body.password === req.body.confirmPassword;
-      if (!isMatch) {
-        throw new AppError({
-          httpCode: HttpCode.NOT_FOUND,
-          description: 'Password and confirm password do not match',
-          isOperational: true,
-        });
+        // throw new AppError({httpCode:HttpCode.BAD_REQUEST, description:errors.array().toString()});
+        return res.status(400).send({ success: false, errors: errors.array() });
       }
       next();
     } catch (err) {

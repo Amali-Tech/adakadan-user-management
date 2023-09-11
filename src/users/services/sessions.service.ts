@@ -2,17 +2,38 @@ import { omit, get } from 'lodash';
 import prisma from '../../prisma';
 import usersService from './users.service';
 import jwtUtils from '../../helpers/jwt';
+import { AppError, HttpCode } from '../../config/errorHandler';
 
 class SessionsService {
   async createSession(userId: string, userAgent: string) {
-    return prisma.session.create({
-      data: { userId: userId, userAgent: userAgent },
-    });
+    try {
+      return await prisma.session.create({
+        data: { userId: userId, userAgent: userAgent },
+      });
+    } catch (err) {
+      throw new AppError({
+        httpCode: HttpCode.INTERNAL_SERVER_ERROR,
+        description: 'Error occurred whiles creating session',
+      });
+    }
   }
   async getUserSession({ userId, valid }: { userId: string; valid: boolean }) {
-    return prisma.session.findFirst({
-      where: { AND: [{ valid }, { userId }] },
-    });
+    try {
+      return await prisma.session.findFirst({
+        where: { AND: [{ valid }, { userId }] },
+      });
+    } catch (err) {
+      if (err.code == 'P2023') {
+        throw new AppError({
+          httpCode: HttpCode.BAD_REQUEST,
+          description: 'Invalid UUID',
+        });
+      }
+      throw new AppError({
+        httpCode: HttpCode.INTERNAL_SERVER_ERROR,
+        description: 'Error occurred during log in',
+      });
+    }
   }
   async updateUserSessions({
     sessionId,
@@ -21,35 +42,61 @@ class SessionsService {
     sessionId: string;
     valid: boolean;
   }) {
-    return prisma.session.update({
-      data: { valid },
-      where: { id: sessionId },
-    });
+    try {
+      return await prisma.session.update({
+        data: { valid },
+        where: { id: sessionId },
+      });
+    } catch (err) {
+      if (err.code == 'P2023') {
+        throw new AppError({
+          httpCode: HttpCode.BAD_REQUEST,
+          description: 'Invalid UUID',
+        });
+      }
+      throw new AppError({
+        httpCode: HttpCode.INTERNAL_SERVER_ERROR,
+        description: 'Error occurred during log in',
+      });
+    }
   }
   async reIssueAccessToken({
     refreshToken,
   }: {
     refreshToken: string;
   }): Promise<boolean | string> {
-    const { decoded } = await jwtUtils.verifyJWT(
-      refreshToken,
-      process.env.REFRESH_TOKEN_SECRET
-    );
+    try {
+      const { decoded } = await jwtUtils.verifyJWT(
+        refreshToken,
+        process.env.REFRESH_TOKEN_SECRET
+      );
 
-    if (!decoded || !get(decoded, 'session')) return false;
+      if (!decoded || !get(decoded, 'session')) return false;
 
-    const session = await prisma.session.findFirst({
-      where: { id: get(decoded, 'session') },
-      include: { user: true },
-    });
+      const session = await prisma.session.findFirst({
+        where: { id: get(decoded, 'session') },
+        include: { user: true },
+      });
 
-    if (!session?.user) return false;
+      if (!session?.user) return false;
 
-    const accessToken = await jwtUtils.signJWT(
-      { ...session.user, session: session.id },
-      { expiresIn: process.env.ACCESS_TOKEN_TTL }
-    );
-    return accessToken;
+      const accessToken = await jwtUtils.signJWT(
+        { ...session.user, session: session.id },
+        { expiresIn: process.env.ACCESS_TOKEN_TTL }
+      );
+      return accessToken;
+    } catch (err) {
+      if (err.code == 'P2023') {
+        throw new AppError({
+          httpCode: HttpCode.BAD_REQUEST,
+          description: 'Invalid UUID',
+        });
+      }
+      throw new AppError({
+        httpCode: HttpCode.INTERNAL_SERVER_ERROR,
+        description: 'Error occurred during acess token reissurance',
+      });
+    }
   }
 
   async validatePassword({
@@ -59,13 +106,25 @@ class SessionsService {
     email: string;
     password: string;
   }) {
-    const user = await usersService.getUserByEmail(email.toLowerCase().trim());
-    if (!user || !user.isActivated) {
-      return false;
+    try {
+      const user = await usersService.getUserByEmail(
+        email.toLowerCase().trim()
+      );
+      if (!user || !user.isActivated) {
+        return false;
+      }
+      const isValid = await usersService.comparePassword(
+        password,
+        user.password
+      );
+      if (!isValid) return false;
+      return omit(user, ['password', 'isActivated', 'createdAt', 'updatedAt']);
+    } catch (err) {
+      throw new AppError({
+        httpCode: HttpCode.INTERNAL_SERVER_ERROR,
+        description: 'Error occurred during log in',
+      });
     }
-    const isValid = await usersService.comparePassword(password, user.password);
-    if (!isValid) return false;
-    return omit(user, ['password', "isActivated"]);
   }
 }
 

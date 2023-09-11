@@ -1,1885 +1,283 @@
 {
-  message: 'Please login',
-  level: 'error',
-  timestamp: '2023-08-23T21:48:12.540Z'
-}
-{
-  message: 'Please login',
-  level: 'error',
-  timestamp: '2023-08-23T21:49:55.751Z'
-}
-{
-  message: 'Please login',
-  level: 'error',
-  timestamp: '2023-08-23T21:51:45.654Z'
-}
-{
-  message: 'Please login',
-  level: 'error',
-  timestamp: '2023-08-23T22:00:44.395Z'
-}
-{
-  message: 'Please login',
-  level: 'error',
-  timestamp: '2023-08-23 22:09:19'
-}
-{
-  message: 'Please login',
-  level: 'error',
-  timestamp: '2023-08-23 22:10:44'
-}
-{
-  message: 'Please login',
-  level: 'error',
-  timestamp: '2023-08-23 22:11:42'
-}
-{
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/helpers/jwt.ts\x1B[0m:\x1B[93m9\x1B[0m:\x1B[93m27\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'obj'.\r\n" +
+    "\x1B[96msrc/users/services/users.service.ts\x1B[0m:\x1B[93m167\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1472: \x1B[0m'catch' or 'finally' expected.\r\n" +
     '\r\n' +
-    '\x1B[7m9\x1B[0m   signJWT = async (object:obj, options?: jwt.SignOptions | undefined) => {\r\n' +
-    '\x1B[7m \x1B[0m \x1B[91m                          ~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 22:15:06'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m176\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1042: \x1B[0m'async' modifier cannot be used here.\r\n" +
-    '\r\n' +
-    '\x1B[7m176\x1B[0m   async addProg\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m  ~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:13:25'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:13:27'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:13:28'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:13:29'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m176\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2391: \x1B[0mFunction implementation is missing or not immediately following the declaration.\r\n' +
-    '\r\n' +
-    '\x1B[7m176\x1B[0m   async addProfilePic(res:express.Response, r)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:13:53'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m176\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2391: \x1B[0mFunction implementation is missing or not immediately following the declaration.\r\n' +
-    '\r\n' +
-    '\x1B[7m176\x1B[0m   async addProfilePic(req:express.Response, r)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:13:58'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m126\x1B[0m:\x1B[93m28\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'putById' does not exist on type 'UsersService'.\r\n" +
-    '\r\n' +
-    '\x1B[7m126\x1B[0m     log(await usersService.putById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                           ~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:16:55'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:16:57'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:16:59'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:01'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:02'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:03'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:04'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:05'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:07'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:08'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:09'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:10'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:12'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:13'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:15'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:16'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:18'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:19'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:21'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:22'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:24'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:26'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m126\x1B[0m:\x1B[93m28\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'putById' does not exist on type 'UsersService'.\r\n" +
-    '\r\n' +
-    '\x1B[7m126\x1B[0m     log(await usersService.putById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                           ~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:30'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:32'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:33'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:35'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:36'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:37'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:38'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:40'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:41'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:17:42'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m177\x1B[0m:\x1B[93m42\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'body' does not exist on type 'Response<any, Record<string, any>>'.\r\n" +
-    '\r\n' +
-    '\x1B[7m177\x1B[0m     log(await usersService.patchById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                         ~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m177\x1B[0m:\x1B[93m55\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'body' does not exist on type 'Response<any, Record<string, any>>'.\r\n" +
-    '\r\n' +
-    '\x1B[7m177\x1B[0m     log(await usersService.patchById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                                      ~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:19'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:20'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:21'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:22'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:24'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:25'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:27'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:28'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:30'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:31'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:32'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:33'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:34'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:36'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:37'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:38'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:39'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:40'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:42'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:43'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:44'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:46'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:47'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:48'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:50'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:51'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:52'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:18:54'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m4\x1B[0m:\x1B[93m1\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1109: \x1B[0mExpression expected.\r\n' +
-    '\r\n' +
-    "\x1B[7m4\x1B[0m import debug from 'debug';\r\n" +
-    '\x1B[7m \x1B[0m \x1B[91m~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:28:40'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:28:41'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:28:42'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:28:44'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:28:45'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:28:46'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:28:48'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:28:49'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:28:50'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1155: \x1B[0m'const' declarations must be initialized.\r\n" +
-    '\r\n' +
-    '\x1B[7m12\x1B[0m const cloudinary\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m      ~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:29:55'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1155: \x1B[0m'const' declarations must be initialized.\r\n" +
-    '\r\n' +
-    '\x1B[7m12\x1B[0m const cloudinaryConfig\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m      ~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:29:58'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1155: \x1B[0m'const' declarations must be initialized.\r\n" +
-    '\r\n' +
-    '\x1B[7m12\x1B[0m const cloudinaryConfig: cloud\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m      ~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'cloud'.\r\n" +
-    '\r\n' +
-    '\x1B[7m12\x1B[0m const cloudinaryConfig: cloud\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:30:10'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2551: \x1B[0mProperty 'cloudinaryConfig' does not exist on type 'typeof v2'. Did you mean 'cloudinary_js_config'?\r\n" +
-    '\r\n' +
-    '\x1B[7m12\x1B[0m const cloudinaryConfig = v2.cloudinaryConfig\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                            ~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\r\n' +
-    '  \x1B[96mnode_modules/cloudinary/types/index.d.ts\x1B[0m:\x1B[93m830\x1B[0m:\x1B[93m18\x1B[0m\r\n' +
-    '    \x1B[7m830\x1B[0m         function cloudinary_js_config(): string;\r\n' +
-    '    \x1B[7m   \x1B[0m \x1B[96m                 ~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "    'cloudinary_js_config' is declared here.\r\n",
-  level: 'error',
-  timestamp: '2023-08-23 23:30:17'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'c' does not exist on type 'typeof v2'.\r\n" +
-    '\r\n' +
-    '\x1B[7m12\x1B[0m const cloudinaryConfig = v2.c\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                            ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:30:29'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:30:31'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ap'.\r\n" +
-    '\r\n' +
-    '\x1B[7m15\x1B[0m   ap\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m  ~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:30:57'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'api'.\r\n" +
-    '\r\n' +
-    '\x1B[7m15\x1B[0m   api\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m  ~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:01'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:03'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'api_secret'.\r\n" +
-    '\r\n' +
-    '\x1B[7m15\x1B[0m   api_secret:\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m  ~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m15\x1B[0m   api_secret:\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m            ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:09'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m13\x1B[0m:\x1B[93m15\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'din07fkdz'.\r\n" +
-    '\r\n' +
-    '\x1B[7m13\x1B[0m   cloud_name: din07fkdz,\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m              ~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:38'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:40'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:41'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m26\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2769: \x1B[0mNo overload matches this call.\r\n' +
-    "  Overload 1 of 3, '(new_config?: boolean | ConfigOptions): ConfigOptions', gave the following error.\r\n" +
-    "    Type 'boolean' is not assignable to type 'string'.\r\n" +
-    "  Overload 2 of 3, '(key: keyof ConfigOptions, value?: undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ cloud_name: boolean; api_key: string; api_secret: string; }' is not assignable to parameter of type 'keyof ConfigOptions'.\r\n" +
-    '\r\n' +
-    '\x1B[7m 12\x1B[0m const cloudinaryConfig = v2.config({\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                         ~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[7m 13\x1B[0m   cloud_name: process.env.NODE_ENV !== 'production',\r\n" +
-    '\x1B[7m   \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\x1B[7m...\x1B[0m \r\n' +
-    '\x1B[7m 15\x1B[0m   api_secret: process.env.API_SECRET\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\x1B[7m 16\x1B[0m })\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m~~\x1B[0m\r\n' +
-    '\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:49'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:50'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:51'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:52'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:53'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:55'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:31:56'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m187\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2389: \x1B[0mFunction implementation name must be 'getCloudinarysignature'.\r\n" +
-    '\r\n' +
-    '\x1B[7m187\x1B[0m   async addProfilePic(req:express.Request, res: express.Response, next: express.NextFunction){\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:33:06'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m186\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'tim'.\r\n" +
-    '\r\n' +
-    '\x1B[7m186\x1B[0m     tim\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m    ~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:33:48'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m186\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'time'.\r\n" +
-    '\r\n' +
-    '\x1B[7m186\x1B[0m     time\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m    ~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:33:53'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m186\x1B[0m:\x1B[93m23\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'ne'.\r\n" +
-    '\r\n' +
-    '\x1B[7m186\x1B[0m     const timestamp = ne\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                      ~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:34:06'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:34:08'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:34:09'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:34:10'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:34:11'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m187\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m187\x1B[0m   }\r\n' +
+    '\x1B[7m167\x1B[0m   }\r\n' +
     '\x1B[7m   \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:34:22'
+  timestamp: '2023-09-11 20:51:00'
 }
 {
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-23 23:34:23'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:34:25'
+  timestamp: '2023-09-11 20:51:01'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m188\x1B[0m:\x1B[93m23\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'cl'.\r\n" +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m19\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'AppError'.\r\n" +
     '\r\n' +
-    '\x1B[7m188\x1B[0m     const signature = cl\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                      ~~\x1B[0m\r\n',
+    '\x1B[7m12\x1B[0m         throw new AppError({\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                  ~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m13\x1B[0m:\x1B[93m21\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'HttpCode'.\r\n" +
+    '\r\n' +
+    '\x1B[7m13\x1B[0m           httpCode: HttpCode.BAD_REQUEST,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                    ~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m17\x1B[0m:\x1B[93m17\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'AppError'.\r\n" +
+    '\r\n' +
+    '\x1B[7m17\x1B[0m       throw new AppError({\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                ~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m18\x1B[0m:\x1B[93m19\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'HttpCode'.\r\n" +
+    '\r\n' +
+    '\x1B[7m18\x1B[0m         httpCode: HttpCode.INTERNAL_SERVER_ERROR,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                  ~~~~~~~~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:46:34'
+  timestamp: '2023-09-11 20:52:15'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m189\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1003: \x1B[0mIdentifier expected.\r\n' +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1472: \x1B[0m'catch' or 'finally' expected.\r\n" +
     '\r\n' +
-    '\x1B[7m189\x1B[0m   }\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
+    '\x1B[7m49\x1B[0m   }\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:46:43'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:46:44'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:46:45'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:46:47'
+  timestamp: '2023-09-11 20:53:59'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m188\x1B[0m:\x1B[93m40\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 2 arguments, but got 1.\r\n' +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m87\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1472: \x1B[0m'catch' or 'finally' expected.\r\n" +
     '\r\n' +
-    '\x1B[7m188\x1B[0m     const signature = cloudinary.utils.api_sign_request({template})\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\r\n' +
-    '  \x1B[96mnode_modules/cloudinary/types/index.d.ts\x1B[0m:\x1B[93m860\x1B[0m:\x1B[93m71\x1B[0m\r\n' +
-    '    \x1B[7m860\x1B[0m             function api_sign_request(params_to_sign: SignApiOptions, api_secret: string): string;\r\n' +
-    '    \x1B[7m   \x1B[0m \x1B[96m                                                                      ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "    An argument for 'api_secret' was not provided.\r\n",
+    '\x1B[7m87\x1B[0m   }\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:47:36'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:47:38'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:47:39'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:47:40'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:47:42'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:47:43'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:47:44'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:47:45'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:47:47'
+  timestamp: '2023-09-11 20:54:35'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m188\x1B[0m:\x1B[93m40\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 2 arguments, but got 1.\r\n' +
+    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m33\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 1 arguments, but got 0.\r\n' +
     '\r\n' +
-    '\x1B[7m188\x1B[0m     const signature = cloudinary.utils.api_sign_request({template}, )\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom()\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                ~~~~~~~~\x1B[0m\r\n' +
     '\r\n' +
-    '  \x1B[96mnode_modules/cloudinary/types/index.d.ts\x1B[0m:\x1B[93m860\x1B[0m:\x1B[93m71\x1B[0m\r\n' +
-    '    \x1B[7m860\x1B[0m             function api_sign_request(params_to_sign: SignApiOptions, api_secret: string): string;\r\n' +
-    '    \x1B[7m   \x1B[0m \x1B[96m                                                                      ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "    An argument for 'api_secret' was not provided.\r\n",
+    '  \x1B[96mnode_modules/express-validator/src/chain/validators.d.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m12\x1B[0m\r\n' +
+    '    \x1B[7m49\x1B[0m     custom(validator: CustomValidator): Return;\r\n' +
+    '    \x1B[7m  \x1B[0m \x1B[96m           ~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "    An argument for 'validator' was not provided.\r\n",
   level: 'error',
-  timestamp: '2023-08-23 23:47:51'
+  timestamp: '2023-09-11 21:06:14'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-11 21:06:15'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-11 21:06:17'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-11 21:06:18'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-11 21:06:19'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m188\x1B[0m:\x1B[93m85\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1003: \x1B[0mIdentifier expected.\r\n' +
+    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1109: \x1B[0mExpression expected.\r\n' +
     '\r\n' +
-    '\x1B[7m188\x1B[0m     const signature = cloudinary.utils.api_sign_request({template},cloudinaryConfig.)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                                                                    ~\x1B[0m\r\n',
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom(())\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                        ~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:48:03'
+  timestamp: '2023-09-11 21:06:23'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m190\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'send'.\r\n" +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'value'.\r\n" +
     '\r\n' +
-    '\x1B[7m190\x1B[0m     res.status(200)send(signature)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                   ~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m190\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m';' expected.\r\n" +
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,(req)))\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2695: \x1B[0mLeft side of comma operator is unused and has no side effects.\r\n' +
     '\r\n' +
-    '\x1B[7m190\x1B[0m     res.status(200)send(signature)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                   ~~~~\x1B[0m\r\n',
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,(req)))\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'req'.\r\n" +
+    '\r\n' +
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,(req)))\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                               ~~~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:48:35'
+  timestamp: '2023-09-11 21:06:29'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m196\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'next'.\r\n" +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'value'.\r\n" +
     '\r\n' +
-    '\x1B[7m196\x1B[0m       next(err);\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m      ~~~~\x1B[0m\r\n',
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req}))\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2695: \x1B[0mLeft side of comma operator is unused and has no side effects.\r\n' +
+    '\r\n' +
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req}))\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2345: \x1B[0mArgument of type '{ req: any; }' is not assignable to parameter of type 'CustomValidator'.\r\n" +
+    "  Object literal may only specify known properties, and 'req' does not exist in type 'CustomValidator'.\r\n" +
+    '\r\n' +
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req}))\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                               ~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS18004: \x1B[0mNo value exists in scope for the shorthand property 'req'. Either declare one or provide an initializer.\r\n" +
+    '\r\n' +
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req}))\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                               ~~~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:49:07'
+  timestamp: '2023-09-11 21:06:37'
 }
 {
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-23 23:49:09'
+  timestamp: '2023-09-11 21:06:38'
 }
 {
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-23 23:49:10'
+  timestamp: '2023-09-11 21:06:39'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-11 21:06:41'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-11 21:06:42'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-11 21:06:43'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m187\x1B[0m:\x1B[93m52\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
+    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m71\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1109: \x1B[0mExpression expected.\r\n' +
     '\r\n' +
-    '\x1B[7m187\x1B[0m       const timestamp = new Date().getTime() / 1000);\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                                   ~\x1B[0m\r\n',
+    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req})=>{return value ==})\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                                                      ~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:54:37'
+  timestamp: '2023-09-11 21:06:56'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-11 21:06:58'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-11 21:06:59'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m187\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1155: \x1B[0m'const' declarations must be initialized.\r\n" +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m26\x1B[0m:\x1B[93m12\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'm' does not exist on type 'ValidationChain'.\r\n" +
     '\r\n' +
-    '\x1B[7m187\x1B[0m       const ten\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m            ~~~\x1B[0m\r\n',
+    '\x1B[7m26\x1B[0m         }).m\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m           ~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:54:51'
+  timestamp: '2023-09-11 21:07:24'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m188\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'tenMilliseconds'.\r\n" +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m27\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'isString' does not exist on type '{}'.\r\n" +
     '\r\n' +
-    '\x1B[7m188\x1B[0m       const timestamp = new Date().getTime() + tenMilliseconds ;\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                               ~~~~~~~~~~~~~~~\x1B[0m\r\n',
+    '\x1B[7m27\x1B[0m         .isString()\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m26\x1B[0m:\x1B[93m23\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m26\x1B[0m         }).withMessage{}\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                      ~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:55:39'
+  timestamp: '2023-09-11 21:07:31'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m188\x1B[0m:\x1B[93m62\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'tenMilliseconds'.\r\n" +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m51\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'checkConfirmPassword' does not exist on type 'UsersMiddleware'.\r\n" +
     '\r\n' +
-    '\x1B[7m188\x1B[0m       const timestampInMilliseconds = new Date().getTime() + tenMilliseconds ;\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                                             ~~~~~~~~~~~~~~~\x1B[0m\r\n',
+    '\x1B[7m51\x1B[0m         usersMiddleware.checkConfirmPassword,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m68\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'validateSameEmailDoesntExist' does not exist on type 'UsersMiddleware'.\r\n" +
+    '\r\n' +
+    '\x1B[7m68\x1B[0m         usersMiddleware.validateSameEmailDoesntExist,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m71\x1B[0m:\x1B[93m44\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'deserializeUser' does not exist on type 'UsersMiddleware'.\r\n" +
+    '\r\n' +
+    "\x1B[7m71\x1B[0m     this.app.use('/users', usersMiddleware.deserializeUser);\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                           ~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m72\x1B[0m:\x1B[93m44\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'requireUser' does not exist on type 'UsersMiddleware'.\r\n" +
+    '\r\n' +
+    "\x1B[7m72\x1B[0m     this.app.use('/users', usersMiddleware.requireUser);\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                           ~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m94\x1B[0m:\x1B[93m28\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'validateUserExists' does not exist on type 'UsersMiddleware'.\r\n" +
+    '\r\n' +
+    '\x1B[7m94\x1B[0m       .all(usersMiddleware.validateUserExists, authorise.adminOnly)\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                           ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m98\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'validateSameEmailBelongToSameUser' does not exist on type 'UsersMiddleware'.\r\n" +
+    '\r\n' +
+    '\x1B[7m98\x1B[0m         usersMiddleware.validateSameEmailBelongToSameUser,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m102\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'validateSameEmailBelongToSameUser' does not exist on type 'UsersMiddleware'.\r\n" +
+    '\r\n' +
+    '\x1B[7m102\x1B[0m         usersMiddleware.validateSameEmailBelongToSameUser,\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:55:49'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:55:51'
+  timestamp: '2023-09-11 21:11:12'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m189\x1B[0m:\x1B[93m12\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1123: \x1B[0mVariable declaration list cannot be empty.\r\n' +
+    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m51\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'checkConfirmPassword' does not exist on type 'UsersMiddleware'.\r\n" +
     '\r\n' +
-    '\x1B[7m189\x1B[0m       const\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m           \x1B[0m\r\n',
+    '\x1B[7m51\x1B[0m         usersMiddleware.checkConfirmPassword,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-23 23:56:02'
+  timestamp: '2023-09-11 21:11:16'
 }
 {
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-23 23:56:04'
+  timestamp: '2023-09-11 21:11:17'
 }
 {
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m189\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1155: \x1B[0m'const' declarations must be initialized.\r\n" +
-    '\r\n' +
-    '\x1B[7m189\x1B[0m       const timestampInMillisecondsString\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:10'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:12'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:13'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m188\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2451: \x1B[0mCannot redeclare block-scoped variable 'timestampInMilliseconds'.\r\n" +
-    '\r\n' +
-    '\x1B[7m188\x1B[0m       const timestampInMilliseconds = new Date().getTime() + teMinutesInMilliseconds ;\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m            ~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m189\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1155: \x1B[0m'const' declarations must be initialized.\r\n" +
-    '\r\n' +
-    '\x1B[7m189\x1B[0m       const timestampInMilliseconds\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m            ~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m189\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2451: \x1B[0mCannot redeclare block-scoped variable 'timestampInMilliseconds'.\r\n" +
-    '\r\n' +
-    '\x1B[7m189\x1B[0m       const timestampInMilliseconds\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m            ~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:17'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m189\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1155: \x1B[0m'const' declarations must be initialized.\r\n" +
-    '\r\n' +
-    '\x1B[7m189\x1B[0m       const timestampInSeconds\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m            ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:22'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:23'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:25'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m191\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m191\x1B[0m       const signature = cloudinary.utils.api_sign_request(\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m      ~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:31'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:32'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:33'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:35'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m192\x1B[0m:\x1B[93m11\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS18004: \x1B[0mNo value exists in scope for the shorthand property 'tim'. Either declare one or provide an initializer.\r\n" +
-    '\r\n' +
-    '\x1B[7m192\x1B[0m         { tim },\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m          ~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:55'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:57'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:58'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:56:59'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:57:00'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:57:02'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:57:03'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:57:04'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m201\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'timsignature'. Did you mean 'signature'?\r\n" +
-    '\r\n' +
-    '\x1B[7m201\x1B[0m       res.status(200).send({timsignature});\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\r\n' +
-    '  \x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m196\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
-    '    \x1B[7m196\x1B[0m       const signature = cloudinary.utils.api_sign_request(\r\n' +
-    '    \x1B[7m   \x1B[0m \x1B[96m            ~~~~~~~~~\x1B[0m\r\n' +
-    "    'signature' is declared here.\r\n",
-  level: 'error',
-  timestamp: '2023-08-23 23:58:14'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:16'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:17'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m197\x1B[0m:\x1B[93m22\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'timestampInSeconds'. Did you mean 'timestampInMilliseconds'?\r\n" +
-    '\r\n' +
-    '\x1B[7m197\x1B[0m         { timestamp: timestampInSeconds },\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                     ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\r\n' +
-    '  \x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m192\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
-    '    \x1B[7m192\x1B[0m       const timestampInMilliseconds =\r\n' +
-    '    \x1B[7m   \x1B[0m \x1B[96m            ~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "    'timestampInMilliseconds' is declared here.\r\n" +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m201\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'timestampInSeconds'. Did you mean 'timestampInMilliseconds'?\r\n" +
-    '\r\n' +
-    '\x1B[7m201\x1B[0m       res.status(200).send({timestampInSeconds, signature});\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\r\n' +
-    '  \x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m192\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
-    '    \x1B[7m192\x1B[0m       const timestampInMilliseconds =\r\n' +
-    '    \x1B[7m   \x1B[0m \x1B[96m            ~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "    'timestampInMilliseconds' is declared here.\r\n",
-  level: 'error',
-  timestamp: '2023-08-23 23:58:31'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:33'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:34'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m201\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'timestampInSeconds'. Did you mean 'timestampInMilliseconds'?\r\n" +
-    '\r\n' +
-    '\x1B[7m201\x1B[0m       res.status(200).send({timestampInSeconds, signature});\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\r\n' +
-    '  \x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m192\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
-    '    \x1B[7m192\x1B[0m       const timestampInMilliseconds =\r\n' +
-    '    \x1B[7m   \x1B[0m \x1B[96m            ~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "    'timestampInMilliseconds' is declared here.\r\n",
-  level: 'error',
-  timestamp: '2023-08-23 23:58:38'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:39'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:41'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:42'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:43'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:45'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-23 23:58:46'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m213\x1B[0m:\x1B[93m11\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1155: \x1B[0m'const' declarations must be initialized.\r\n" +
-    '\r\n' +
-    '\x1B[7m213\x1B[0m     const expected\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m          ~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:03'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:04'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m213\x1B[0m:\x1B[93m42\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'ut' does not exist on type 'typeof v2'.\r\n" +
-    '\r\n' +
-    '\x1B[7m213\x1B[0m     const expectedSignature = cloudinary.ut\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                         ~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:13'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:15'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m214\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 2 arguments, but got 3.\r\n' +
-    '\r\n' +
-    '\x1B[7m214\x1B[0m     log(await usersService.patchById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m214\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m214\x1B[0m     log(await usersService.patchById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m    ~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m214\x1B[0m:\x1B[93m61\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m')' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m214\x1B[0m     log(await usersService.patchById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                                            ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:20'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:22'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m214\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2345: \x1B[0mArgument of type 'void' is not assignable to parameter of type 'string'.\r\n" +
-    '\r\n' +
-    '\x1B[7m214\x1B[0m     log(await usersService.patchById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m214\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m214\x1B[0m     log(await usersService.patchById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m    ~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m214\x1B[0m:\x1B[93m61\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m')' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m214\x1B[0m     log(await usersService.patchById(req.body.id, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                                            ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:28'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:30'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:31'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:32'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:33'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:35'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:36'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:37'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:38'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:39'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:40'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:42'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:43'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:44'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:45'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:47'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m213\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 2 arguments, but got 0.\r\n' +
-    '\r\n' +
-    '\x1B[7m213\x1B[0m     const expectedSignature = cloudinary.utils.api_sign_request()\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                               ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\r\n' +
-    '  \x1B[96mnode_modules/cloudinary/types/index.d.ts\x1B[0m:\x1B[93m860\x1B[0m:\x1B[93m39\x1B[0m\r\n' +
-    '    \x1B[7m860\x1B[0m             function api_sign_request(params_to_sign: SignApiOptions, api_secret: string): string;\r\n' +
-    '    \x1B[7m   \x1B[0m \x1B[96m                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "    An argument for 'params_to_sign' was not provided.\r\n",
-  level: 'error',
-  timestamp: '2023-08-24 00:01:57'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:01:59'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:02:00'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:02:02'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m213\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 2 arguments, but got 1.\r\n' +
-    '\r\n' +
-    '\x1B[7m213\x1B[0m     const expectedSignature = cloudinary.utils.api_sign_request(req.body)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    '\r\n' +
-    '  \x1B[96mnode_modules/cloudinary/types/index.d.ts\x1B[0m:\x1B[93m860\x1B[0m:\x1B[93m71\x1B[0m\r\n' +
-    '    \x1B[7m860\x1B[0m             function api_sign_request(params_to_sign: SignApiOptions, api_secret: string): string;\r\n' +
-    '    \x1B[7m   \x1B[0m \x1B[96m                                                                      ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "    An argument for 'api_secret' was not provided.\r\n",
-  level: 'error',
-  timestamp: '2023-08-24 00:02:07'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:02:09'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:02:10'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:02:12'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:02:13'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m213\x1B[0m:\x1B[93m75\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'cl'.\r\n" +
-    '\r\n' +
-    '\x1B[7m213\x1B[0m     const expectedSignature = cloudinary.utils.api_sign_request(req.body, cl)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                                                          ~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:02:20'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:02:22'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m215\x1B[0m:\x1B[93m8\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1109: \x1B[0mExpression expected.\r\n' +
-    '\r\n' +
-    '\x1B[7m215\x1B[0m     if()\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m       ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:03:03'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:03:04'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m215\x1B[0m:\x1B[93m28\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1109: \x1B[0mExpression expected.\r\n' +
-    '\r\n' +
-    '\x1B[7m215\x1B[0m     if(expectedSignature ==)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                           ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:03:09'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m212\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1182: \x1B[0mA destructuring declaration must have an initializer.\r\n' +
-    '\r\n' +
-    '\x1B[7m212\x1B[0m       const {}\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m            ~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:04:19'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m212\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1182: \x1B[0mA destructuring declaration must have an initializer.\r\n' +
-    '\r\n' +
-    '\x1B[7m212\x1B[0m       const {version, }\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m            ~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:04:25'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m212\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1182: \x1B[0mA destructuring declaration must have an initializer.\r\n' +
-    '\r\n' +
-    '\x1B[7m212\x1B[0m       const {version, public_id, si}\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m            ~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:04:33'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m216\x1B[0m:\x1B[93m38\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2345: \x1B[0mArgument of type '{ pr: any; }' is not assignable to parameter of type 'string'.\r\n" +
-    '\r\n' +
-    '\x1B[7m216\x1B[0m     log(await usersService.patchById({pr}, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                     ~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m216\x1B[0m:\x1B[93m39\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS18004: \x1B[0mNo value exists in scope for the shorthand property 'pr'. Either declare one or provide an initializer.\r\n" +
-    '\r\n' +
-    '\x1B[7m216\x1B[0m     log(await usersService.patchById({pr}, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                      ~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:24'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m216\x1B[0m:\x1B[93m38\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2345: \x1B[0mArgument of type '{ pro: any; }' is not assignable to parameter of type 'string'.\r\n" +
-    '\r\n' +
-    '\x1B[7m216\x1B[0m     log(await usersService.patchById({pro}, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                     ~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m216\x1B[0m:\x1B[93m39\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS18004: \x1B[0mNo value exists in scope for the shorthand property 'pro'. Either declare one or provide an initializer.\r\n" +
-    '\r\n' +
-    '\x1B[7m216\x1B[0m     log(await usersService.patchById({pro}, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                      ~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:27'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:28'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:30'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:31'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:32'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:34'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:36'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:37'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:38'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:39'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:40'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m216\x1B[0m:\x1B[93m38\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2345: \x1B[0mArgument of type '{ profileImage: any; }' is not assignable to parameter of type 'string'.\r\n" +
-    '\r\n' +
-    '\x1B[7m216\x1B[0m     log(await usersService.patchById({profileImage: public_id}, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                     ~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:49'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m218\x1B[0m:\x1B[93m40\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2345: \x1B[0mArgument of type '{ profileImage: any; }' is not assignable to parameter of type 'string'.\r\n" +
-    '\r\n' +
-    '\x1B[7m218\x1B[0m       log(await usersService.patchById({ profileImage: public_id }, req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:53'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:55'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:57'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:05:58'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:06:00'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:06:01'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:06:02'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m218\x1B[0m:\x1B[93m40\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 're'.\r\n" +
-    '\r\n' +
-    '\x1B[7m218\x1B[0m       log(await usersService.patchById(re{ profileImage: public_id }));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                       ~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m218\x1B[0m:\x1B[93m42\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m218\x1B[0m       log(await usersService.patchById(re{ profileImage: public_id }));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                         ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:06:09'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m134\x1B[0m:\x1B[93m49\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1003: \x1B[0mIdentifier expected.\r\n' +
-    '\r\n' +
-    '\x1B[7m134\x1B[0m     log(await usersService.patchById(req.params., req.body));\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                                ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:06:55'
-}
-
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:10:13'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:10:14'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:10:16'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:10:17'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:10:18'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m227\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1042: \x1B[0m'async' modifier cannot be used here.\r\n" +
-    '\r\n' +
-    '\x1B[7m227\x1B[0m   async delete\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m  ~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:13:25'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:13:27'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m227\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1042: \x1B[0m'async' modifier cannot be used here.\r\n" +
-    '\r\n' +
-    '\x1B[7m227\x1B[0m   async deletePro\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m  ~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:13:30'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:13:31'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m227\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2391: \x1B[0mFunction implementation is missing or not immediately following the declaration.\r\n' +
-    '\r\n' +
-    '\x1B[7m227\x1B[0m   async deleteProfilePic(re)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:13:41'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m227\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2391: \x1B[0mFunction implementation is missing or not immediately following the declaration.\r\n' +
-    '\r\n' +
-    '\x1B[7m227\x1B[0m   async deleteProfilePic(req:express.Request, res: express.Response, next: express.NextFunction{\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m227\x1B[0m:\x1B[93m96\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m227\x1B[0m   async deleteProfilePic(req:express.Request, res: express.Response, next: express.NextFunction{\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                                                                               ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:13:49'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:13:50'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:13:52'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:13:53'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m231\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1472: \x1B[0m'catch' or 'finally' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m231\x1B[0m   }\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:14:25'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:14:27'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:14:28'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:14:30'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:14:31'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m229\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'lo'.\r\n" +
-    '\r\n' +
-    '\x1B[7m229\x1B[0m       lo\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m      ~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m231\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1472: \x1B[0m'catch' or 'finally' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m231\x1B[0m   }\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:14:34'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m231\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1472: \x1B[0m'catch' or 'finally' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m231\x1B[0m   }\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:14:40'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:14:42'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:14:43'
-}
-
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:15'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:16'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:17'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:18'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:20'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:21'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:22'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:24'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:25'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:26'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:27'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:28'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:29'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:31'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:32'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:15:34'
-}
-
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:16'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:17'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:19'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:20'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:21'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:23'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:24'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:25'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:27'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:28'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:29'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:30'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:31'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:33'
-}
-{
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-24 00:16:35'
+  timestamp: '2023-09-11 21:11:18'
 }
 {
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-24 00:16:36'
+  timestamp: '2023-09-11 21:11:19'
 }
 {
   message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:37'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/controller/users.controller.ts\x1B[0m:\x1B[93m233\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'c'.\r\n" +
-    '\r\n' +
-    '\x1B[7m233\x1B[0m       c\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m      ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-08-24 00:16:48'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m101\x1B[0m:\x1B[93m36\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1003: \x1B[0mIdentifier expected.\r\n' +
-    '\r\n' +
-    '\x1B[7m101\x1B[0m             .patch(usersController.)\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                                   ~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-08-24 00:23:46'
+  timestamp: '2023-09-11 21:11:20'
 }
 {
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-24 00:23:48'
+  timestamp: '2023-09-11 21:11:21'
 }
 {
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-24 00:23:50'
+  timestamp: '2023-09-11 21:11:22'
 }
 {
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-24 00:23:51'
+  timestamp: '2023-09-11 21:11:24'
 }
 {
   message: 'Missing credentials for "PLAIN"',
   level: 'error',
-  timestamp: '2023-08-24 00:23:53'
+  timestamp: '2023-09-11 21:11:25'
 }
-
