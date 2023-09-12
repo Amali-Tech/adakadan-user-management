@@ -1,7 +1,6 @@
-import bcrypt from 'bcrypt';
+import * as bcrypt from 'bcrypt';
 
-const salt = bcrypt.genSaltSync(+process.env.SALT_ROUND!);
-const password = bcrypt.hashSync('Pielly16$', salt);
+const password =  bcrypt.hashSync("Pielly16$", +process.env.SALT_ROUND!)
 
 const users = [
   {
@@ -9,7 +8,7 @@ const users = [
     surname: 'Doe',
     email: 'pielly16@gmail.com',
     accountType: 'Admin',
-    password,
+    password ,
     isActivated: true,
   },
 ];

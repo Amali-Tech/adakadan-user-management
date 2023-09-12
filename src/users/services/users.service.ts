@@ -2,7 +2,7 @@ import prisma from '../../prisma';
 import { CRUD } from '../../common/interfaces/crud.intefaces';
 import { ICreateUserDto } from '../dtos/create.user.dto';
 import { IPatchUserDto } from '../dtos/patch.user.dto';
-import bcrypt from 'bcrypt';
+import * as bcrypt from 'bcrypt';
 import debug from 'debug';
 import { omit } from 'lodash';
 import { User } from '@prisma/client';

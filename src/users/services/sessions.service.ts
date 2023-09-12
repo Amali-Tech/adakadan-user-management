@@ -118,7 +118,16 @@ class SessionsService {
         user.password
       );
       if (!isValid) return false;
-      return omit(user, ['password', 'isActivated', 'createdAt', 'updatedAt']);
+      const onlineUser = await usersService.patchById(user.id, {
+        online: true,
+      });
+      return omit(onlineUser, [
+        'password',
+        'isActivated',
+        'createdAt',
+        'updatedAt',
+        'getNewsletters',
+      ]);
     } catch (err) {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,

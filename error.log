@@ -1,283 +1,44 @@
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/services/users.service.ts\x1B[0m:\x1B[93m167\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1472: \x1B[0m'catch' or 'finally' expected.\r\n" +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m121\x1B[0m:\x1B[93m47\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'update' does not exist on type 'UsersService'.\r\n" +
     '\r\n' +
-    '\x1B[7m167\x1B[0m   }\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
+    '\x1B[7m121\x1B[0m         const onlineUser = await usersService.update({})\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                              ~~~~~~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-09-11 20:51:00'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 20:51:01'
+  timestamp: '2023-09-12 00:52:33'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m12\x1B[0m:\x1B[93m19\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'AppError'.\r\n" +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m121\x1B[0m:\x1B[93m47\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'update' does not exist on type 'UsersService'.\r\n" +
     '\r\n' +
-    '\x1B[7m12\x1B[0m         throw new AppError({\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                  ~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m13\x1B[0m:\x1B[93m21\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'HttpCode'.\r\n" +
+    '\x1B[7m121\x1B[0m         const onlineUser = await usersService.update(user.id{})\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                              ~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m121\x1B[0m:\x1B[93m61\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
     '\r\n' +
-    '\x1B[7m13\x1B[0m           httpCode: HttpCode.BAD_REQUEST,\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                    ~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m17\x1B[0m:\x1B[93m17\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'AppError'.\r\n" +
-    '\r\n' +
-    '\x1B[7m17\x1B[0m       throw new AppError({\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                ~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m18\x1B[0m:\x1B[93m19\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'HttpCode'.\r\n" +
-    '\r\n' +
-    '\x1B[7m18\x1B[0m         httpCode: HttpCode.INTERNAL_SERVER_ERROR,\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                  ~~~~~~~~\x1B[0m\r\n',
+    '\x1B[7m121\x1B[0m         const onlineUser = await usersService.update(user.id{})\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                                            ~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-09-11 20:52:15'
+  timestamp: '2023-09-12 00:52:46'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1472: \x1B[0m'catch' or 'finally' expected.\r\n" +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m121\x1B[0m:\x1B[93m45\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'update' does not exist on type 'UsersService'.\r\n" +
     '\r\n' +
-    '\x1B[7m49\x1B[0m   }\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
+    '\x1B[7m121\x1B[0m       const onlineUser = await usersService.update(user.id, { online: true });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                            ~~~~~~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-09-11 20:53:59'
+  timestamp: '2023-09-12 00:53:02'
 }
 {
   message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m87\x1B[0m:\x1B[93m3\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1472: \x1B[0m'catch' or 'finally' expected.\r\n" +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m121\x1B[0m:\x1B[93m45\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'update' does not exist on type 'UsersService'.\r\n" +
     '\r\n' +
-    '\x1B[7m87\x1B[0m   }\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m  ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-09-11 20:54:35'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m33\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2554: \x1B[0mExpected 1 arguments, but got 0.\r\n' +
+    '\x1B[7m121\x1B[0m       const onlineUser = await usersService.update(user.id, { online: true });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                            ~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/users/services/sessions.service.ts\x1B[0m:\x1B[93m122\x1B[0m:\x1B[93m19\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'usonlier'.\r\n" +
     '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom()\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                ~~~~~~~~\x1B[0m\r\n' +
-    '\r\n' +
-    '  \x1B[96mnode_modules/express-validator/src/chain/validators.d.ts\x1B[0m:\x1B[93m49\x1B[0m:\x1B[93m12\x1B[0m\r\n' +
-    '    \x1B[7m49\x1B[0m     custom(validator: CustomValidator): Return;\r\n' +
-    '    \x1B[7m  \x1B[0m \x1B[96m           ~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "    An argument for 'validator' was not provided.\r\n",
+    '\x1B[7m122\x1B[0m       return omit(usonlier, [\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                  ~~~~~~~~\x1B[0m\r\n',
   level: 'error',
-  timestamp: '2023-09-11 21:06:14'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:15'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:17'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:18'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:19'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1109: \x1B[0mExpression expected.\r\n' +
-    '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom(())\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                        ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:23'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'value'.\r\n" +
-    '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,(req)))\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
-    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2695: \x1B[0mLeft side of comma operator is unused and has no side effects.\r\n' +
-    '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,(req)))\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'req'.\r\n" +
-    '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,(req)))\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                               ~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:29'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'value'.\r\n" +
-    '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req}))\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
-    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2695: \x1B[0mLeft side of comma operator is unused and has no side effects.\r\n' +
-    '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req}))\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2345: \x1B[0mArgument of type '{ req: any; }' is not assignable to parameter of type 'CustomValidator'.\r\n" +
-    "  Object literal may only specify known properties, and 'req' does not exist in type 'CustomValidator'.\r\n" +
-    '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req}))\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                               ~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m48\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS18004: \x1B[0mNo value exists in scope for the shorthand property 'req'. Either declare one or provide an initializer.\r\n" +
-    '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req}))\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                               ~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:37'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:38'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:39'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:41'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:42'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:43'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    '\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m25\x1B[0m:\x1B[93m71\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1109: \x1B[0mExpression expected.\r\n' +
-    '\r\n' +
-    "\x1B[7m25\x1B[0m         body('confirmPassword').custom((value,{req})=>{return value ==})\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                                                      ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:56'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:58'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:06:59'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m26\x1B[0m:\x1B[93m12\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'm' does not exist on type 'ValidationChain'.\r\n" +
-    '\r\n' +
-    '\x1B[7m26\x1B[0m         }).m\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m           ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-09-11 21:07:24'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m27\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'isString' does not exist on type '{}'.\r\n" +
-    '\r\n' +
-    '\x1B[7m27\x1B[0m         .isString()\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m         ~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m26\x1B[0m:\x1B[93m23\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
-    '\r\n' +
-    '\x1B[7m26\x1B[0m         }).withMessage{}\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                      ~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-09-11 21:07:31'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m51\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'checkConfirmPassword' does not exist on type 'UsersMiddleware'.\r\n" +
-    '\r\n' +
-    '\x1B[7m51\x1B[0m         usersMiddleware.checkConfirmPassword,\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m68\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'validateSameEmailDoesntExist' does not exist on type 'UsersMiddleware'.\r\n" +
-    '\r\n' +
-    '\x1B[7m68\x1B[0m         usersMiddleware.validateSameEmailDoesntExist,\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m71\x1B[0m:\x1B[93m44\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'deserializeUser' does not exist on type 'UsersMiddleware'.\r\n" +
-    '\r\n' +
-    "\x1B[7m71\x1B[0m     this.app.use('/users', usersMiddleware.deserializeUser);\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                           ~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m72\x1B[0m:\x1B[93m44\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'requireUser' does not exist on type 'UsersMiddleware'.\r\n" +
-    '\r\n' +
-    "\x1B[7m72\x1B[0m     this.app.use('/users', usersMiddleware.requireUser);\r\n" +
-    '\x1B[7m  \x1B[0m \x1B[91m                                           ~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m94\x1B[0m:\x1B[93m28\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'validateUserExists' does not exist on type 'UsersMiddleware'.\r\n" +
-    '\r\n' +
-    '\x1B[7m94\x1B[0m       .all(usersMiddleware.validateUserExists, authorise.adminOnly)\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                           ~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m98\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'validateSameEmailBelongToSameUser' does not exist on type 'UsersMiddleware'.\r\n" +
-    '\r\n' +
-    '\x1B[7m98\x1B[0m         usersMiddleware.validateSameEmailBelongToSameUser,\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m102\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'validateSameEmailBelongToSameUser' does not exist on type 'UsersMiddleware'.\r\n" +
-    '\r\n' +
-    '\x1B[7m102\x1B[0m         usersMiddleware.validateSameEmailBelongToSameUser,\r\n' +
-    '\x1B[7m   \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:12'
-}
-{
-  message: '⨯ Unable to compile TypeScript:\n' +
-    "\x1B[96msrc/users/users.route.config.ts\x1B[0m:\x1B[93m51\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'checkConfirmPassword' does not exist on type 'UsersMiddleware'.\r\n" +
-    '\r\n' +
-    '\x1B[7m51\x1B[0m         usersMiddleware.checkConfirmPassword,\r\n' +
-    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:16'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:17'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:18'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:19'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:20'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:21'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:22'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:24'
-}
-{
-  message: 'Missing credentials for "PLAIN"',
-  level: 'error',
-  timestamp: '2023-09-11 21:11:25'
+  timestamp: '2023-09-12 00:53:09'
 }
