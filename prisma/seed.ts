@@ -4,7 +4,7 @@ import prisma from '../src/prisma';
 async function main() {
   for (const user of users) {
     await prisma.user.create({
-      data: user,
+      data:  user,
     });
   }
 }

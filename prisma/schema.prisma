@@ -14,7 +14,7 @@ model User {
   email          String       @unique @db.Char(150)
   firstName      String       @map("first_name") @db.Char(150)
   otherName      String?      @map("other_name") @db.Char(150)
-  password       String?      @db.Char(250)
+  password       String?      
   surname        String       @db.Char(150)
   isActivated    Boolean      @default(false) @map("is_activated")
   online         Boolean      @default(false)

@@ -7,7 +7,6 @@ class SessionsController {
   async createSession(req: express.Request, res: express.Response , next: express.NextFunction) {
     try {
       //validate user password
-      console.log(req.body);
       const user = await sessionsService.validatePassword(req.body);
 
       if (!user) {
@@ -16,7 +15,8 @@ class SessionsController {
           description: 'Invalid credentials',
         });
       }
-      //create session
+      
+      // create session
       const session = await sessionsService.createSession(
         user.id,
         req.headers['user-agent']

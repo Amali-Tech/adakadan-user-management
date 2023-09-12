@@ -23,7 +23,7 @@ export class UsersRoutes extends CommonRoutesConfig {
         .withMessage('Passwords is must be the same')
         .isString()
         .notEmpty()
-        .withMessage('Confirm is required'),
+        .withMessage('Confirm password is required'),
       usersController.activateUser
     );
     this.app

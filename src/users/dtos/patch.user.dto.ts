@@ -7,6 +7,7 @@ export interface IPatchUserDto {
   role: string;
   password: string;
   isActivated: boolean;
+  online: boolean;
   getNewsletter: boolean;
   phone: string;
   profileImage:string;
