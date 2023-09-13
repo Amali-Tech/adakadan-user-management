@@ -3,7 +3,6 @@ import { CommonRoutesConfig } from '../../common/common.routes.config';
 import usersController from './controller/users.controller';
 import usersMiddleware from './middleware/users.middleware';
 import authorise from '../../helpers/auth';
-import { versions } from '../../app';
 import { body } from 'express-validator';
 
 export class UsersRoutes extends CommonRoutesConfig {
@@ -12,7 +11,7 @@ export class UsersRoutes extends CommonRoutesConfig {
   }
 
   configureRoutes() {
-    this.app.route(`${versions.v1}/user/activate`).post(
+    this.app.route(`${this.versions.v1}/user/activate`).post(
       body('token')
         .notEmpty()
         .withMessage('Token is required')
@@ -33,7 +32,7 @@ export class UsersRoutes extends CommonRoutesConfig {
       usersController.activateUser
     );
     this.app
-      .route(`${versions.v1}/user/forgot-password`)
+      .route(`${this.versions.v1}/user/forgot-password`)
       .post(body('email').isEmail().notEmpty().withMessage('Email is required'),usersMiddleware.verifyRequestFieldsErrors,usersController.forgotPassword);
     this.app.route(`/user/reset-password/:token`).post(
       body('password')
@@ -52,7 +51,7 @@ export class UsersRoutes extends CommonRoutesConfig {
       usersController.newPassword
     );
     this.app
-      .route(`${versions.v1}/users`)
+      .route(`${this.versions.v1}/users`)
       .post(
         body('firstName')
           .isString()
@@ -76,10 +75,10 @@ export class UsersRoutes extends CommonRoutesConfig {
     this.app.use('/users', usersMiddleware.deserializeUser);
     this.app.use('/users', usersMiddleware.requireUser);
     this.app
-      .route(`${versions.v1}/users`)
+      .route(`${this.versions.v1}/users`)
       .get(authorise.adminOnly, usersController.listUsers);
     this.app
-      .route(`${versions.v1}/users/:userId`)
+      .route(`${this.versions.v1}/users/:userId`)
       .patch(
         body('firstName').optional().isString(),
         body('otherName').optional().isString(),
@@ -95,7 +94,7 @@ export class UsersRoutes extends CommonRoutesConfig {
       )
       .get(usersController.getUserById);
     this.app
-      .route(`${versions.v1}/users/:userId`)
+      .route(`${this.versions.v1}/users/:userId`)
       .all(usersMiddleware.validateUserExists, authorise.adminOnly)
       .get(usersController.getUserById)
       .delete(usersController.removeUser)
@@ -108,7 +107,7 @@ export class UsersRoutes extends CommonRoutesConfig {
         usersController.patch
       );
     this.app
-      .route(`${versions.v1}/users/:userId/profileImages`)
+      .route(`${this.versions.v1}/users/:userId/profileImages`)
       .get(usersController.getCloudinarySignature)
       .patch(
         body('version')
