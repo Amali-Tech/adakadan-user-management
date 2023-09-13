@@ -3,9 +3,9 @@ import usersService from '../services/users.service';
 import { v2 as cloudinary } from 'cloudinary';
 import debug from 'debug';
 import jwt, { JwtPayload } from 'jsonwebtoken';
-import template from '../../helpers/template';
-import sendMail from '../../helpers/mail';
-import { AppError, HttpCode } from '../../config/errorHandler';
+import template from '../../../helpers/template';
+import sendMail from '../../../helpers/mail';
+import { AppError, HttpCode } from '../../../config/errorHandler';
 import useragent from 'useragent';
 
 const log: debug.IDebugger = debug('app:users-controller');

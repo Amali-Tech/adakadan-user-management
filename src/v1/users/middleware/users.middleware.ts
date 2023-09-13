@@ -1,11 +1,11 @@
 import express from 'express';
 import userService from '../services/users.service';
 import debug from 'debug';
-import jwtUtils from '../../helpers/jwt';
+import jwtUtils from '../../../helpers/jwt';
 import { get } from 'lodash';
 import { validationResult } from 'express-validator';
 import sessionsService from '../services/sessions.service';
-import { AppError, HttpCode } from '../../config/errorHandler';
+import { AppError, HttpCode } from '../../../config/errorHandler';
 
 const log: debug.IDebugger = debug('app:users-middleware');
 class UsersMiddleware {

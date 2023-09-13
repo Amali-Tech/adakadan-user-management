@@ -1,9 +1,9 @@
 import express from 'express';
-import { CommonRoutesConfig } from '../common/common.routes.config';
+import { CommonRoutesConfig } from '../../common/common.routes.config';
 import usersController from './controller/users.controller';
 import usersMiddleware from './middleware/users.middleware';
-import authorise from '../helpers/auth';
-import { versions } from '../app';
+import authorise from '../../helpers/auth';
+import { versions } from '../../app';
 import { body } from 'express-validator';
 
 export class UsersRoutes extends CommonRoutesConfig {

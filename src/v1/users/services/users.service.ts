@@ -1,12 +1,12 @@
-import prisma from '../../prisma';
-import { CRUD } from '../../common/interfaces/crud.intefaces';
+import prisma from '../../../prisma';
+import { CRUD } from '../../../common/interfaces/crud.intefaces';
 import { ICreateUserDto } from '../dtos/create.user.dto';
 import { IPatchUserDto } from '../dtos/patch.user.dto';
 import * as bcrypt from 'bcrypt';
 import debug from 'debug';
 import { omit } from 'lodash';
 import { User } from '@prisma/client';
-import { AppError, HttpCode } from '../../config/errorHandler';
+import { AppError, HttpCode } from '../../../config/errorHandler';
 
 const log: debug.IDebugger = debug('app:user-service');
 class UsersService implements CRUD {
