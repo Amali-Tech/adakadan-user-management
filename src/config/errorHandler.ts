@@ -56,7 +56,7 @@ export class AppError extends Error {
   });
 //send mail to admin when error logs file
   private async sendMailToAdmin(err: AppError | Error) {
-   await sendMail([process.env.ADMIN_MAIL], 'Server Error', err.message, [
+   await sendMail([process.env.ADMIN_MAIL], 'Application Server Error', `<p>${err.message}<p>`, [
       { filename: 'error.log', path: './error.log' },
     ]);
   }

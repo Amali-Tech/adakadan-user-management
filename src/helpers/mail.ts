@@ -8,7 +8,7 @@ const sendMail = async (
   emails: string[],
   subject: string,
   html: string,
-  attachments?
+  attachments? : { [key: string]: string}[]
 ) => {
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com', // Your SMTP host server

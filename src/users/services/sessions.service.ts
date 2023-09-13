@@ -43,10 +43,12 @@ class SessionsService {
     valid: boolean;
   }) {
     try {
-      return await prisma.session.update({
+      const session =  await prisma.session.update({
         data: { valid },
         where: { id: sessionId },
+        include: {user: true},
       });
+      await usersService.patchById(session.user.id, {online: false})
     } catch (err) {
       if (err.code == 'P2023') {
         throw new AppError({

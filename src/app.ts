@@ -11,14 +11,19 @@ const port = process.env.PORT ?? 3000;
 const log: debug.IDebugger = debug("app");
 
 
+//api versions
+export const versions = {
+  v1: 'api/v1'  
+}
+
 // this is a simple route to make sure everything is working properly
 
-const runningMessage = `Server running 👨‍💻 at http://localhost:${port}`;
+const runningMessage = `<h1>Server running 👨‍💻 at http://localhost:${port}<h1>`;
 app.get("/", (req: express.Request, res: express.Response) => {
   res.status(200).send(runningMessage);
 });
 app.use("*", (req: express.Request, res: express.Response) => {
-  res.status(404).send("Page not found 🖐🏽");
+  res.status(404).send("<h1>Page not found 🖐🏽<h1>");
 });
 
 (async () => {
