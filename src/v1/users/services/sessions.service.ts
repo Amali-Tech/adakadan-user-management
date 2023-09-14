@@ -1,8 +1,8 @@
 import { omit, get } from 'lodash';
-import prisma from '../../prisma';
+import prisma from '../../../prisma';
 import usersService from './users.service';
-import jwtUtils from '../../helpers/jwt';
-import { AppError, HttpCode } from '../../config/errorHandler';
+import jwtUtils from '../../../helpers/jwt';
+import { AppError, HttpCode } from '../../../config/errorHandler';
 
 class SessionsService {
   async createSession(userId: string, userAgent: string) {
@@ -43,10 +43,12 @@ class SessionsService {
     valid: boolean;
   }) {
     try {
-      return await prisma.session.update({
+      const session =  await prisma.session.update({
         data: { valid },
         where: { id: sessionId },
+        include: {user: true},
       });
+      await usersService.patchById(session.user.id, {online: false})
     } catch (err) {
       if (err.code == 'P2023') {
         throw new AppError({

@@ -1,7 +1,7 @@
 import express from 'express';
 import sessionsService from '../services/sessions.service';
-import jwtUtils from '../../helpers/jwt';
-import { AppError, HttpCode } from '../../config/errorHandler';
+import jwtUtils from '../../../helpers/jwt';
+import { AppError, HttpCode } from '../../../config/errorHandler';
 
 class SessionsController {
   async createSession(req: express.Request, res: express.Response , next: express.NextFunction) {

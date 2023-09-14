@@ -1,6 +1,6 @@
 import express from 'express';
-import { UsersRoutes } from '../users/users.route.config';
-import { SessionsRoutes } from '../users/sessions.route.config';
+import { UsersRoutes } from '../v1/users/users.route.config';
+import { SessionsRoutes } from '../v1/users/sessions.route.config';
 import cors from 'cors';
 import { CommonRoutesConfig } from '../common/common.routes.config';
 import debug from 'debug';

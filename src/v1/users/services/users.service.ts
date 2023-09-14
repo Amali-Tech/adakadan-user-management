@@ -1,31 +1,40 @@
-import prisma from '../../prisma';
-import { CRUD } from '../../common/interfaces/crud.intefaces';
+import prisma from '../../../prisma';
+import { CRUD } from '../../../common/interfaces/crud.intefaces';
 import { ICreateUserDto } from '../dtos/create.user.dto';
 import { IPatchUserDto } from '../dtos/patch.user.dto';
 import * as bcrypt from 'bcrypt';
 import debug from 'debug';
 import { omit } from 'lodash';
 import { User } from '@prisma/client';
-import { AppError, HttpCode } from '../../config/errorHandler';
+import { AppError, HttpCode } from '../../../config/errorHandler';
 
 const log: debug.IDebugger = debug('app:user-service');
 class UsersService implements CRUD {
   async create(resource: ICreateUserDto) {
     try {
+      const date = new Date(Date.now());
+      await prisma.user.deleteMany({
+        where: { AND: { isActivated: false, createdAt: { lt: date } } },
+      });
       return await prisma.user.create({ data: resource });
     } catch (err) {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
         description: 'Error occurred whiles creating user',
+        isOperational: false,
       });
     }
   }
-  async activateUser(id: string) {
+  async activateUser(id: string, resource: Partial<IPatchUserDto>) {
     try {
-      const user = await prisma.user.update({
-        where: { id: id },
-        data: { isActivated: true },
-      });
+      const user = await this.patchById(id, resource);
+
+      if (!user) {
+        throw new AppError({
+          httpCode: HttpCode.BAD_REQUEST,
+          description: 'Invalid link, please register',
+        });
+      }
       return omit(user, [
         'password',
         'createdAt',
@@ -43,6 +52,7 @@ class UsersService implements CRUD {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
         description: 'Error occurred whiles activating user',
+        isOperational: false,
       });
     }
   }
@@ -68,7 +78,8 @@ class UsersService implements CRUD {
       }
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
-        description: 'Error occurred whiles getting  user',
+        description: 'Error occurred whiles getting user',
+        isOperational: false,
       });
     }
   }
@@ -92,6 +103,7 @@ class UsersService implements CRUD {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
         description: 'Error occurred whiles updating user',
+        isOperational: false,
       });
     }
   }
@@ -108,6 +120,7 @@ class UsersService implements CRUD {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
         description: 'Error occurred whiles deleting user',
+        isOperational: false,
       });
     }
   }
@@ -137,6 +150,7 @@ class UsersService implements CRUD {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
         description: 'Error occurred whiles creating users',
+        isOperational: false,
       });
     }
   }
@@ -153,6 +167,7 @@ class UsersService implements CRUD {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
         description: 'Error occurred whiles getting user',
+        isOperational: false,
       });
     }
   }
@@ -175,6 +190,7 @@ class UsersService implements CRUD {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
         description: 'Error occurred whiles hashing credentials',
+        isOperational: false,
       });
     }
   }

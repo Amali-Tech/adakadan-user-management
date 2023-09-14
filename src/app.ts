@@ -11,6 +11,11 @@ const port = process.env.PORT ?? 3000;
 const log: debug.IDebugger = debug("app");
 
 
+//api versions
+export const versions = {
+  v1: 'api/v1'  
+}
+
 // this is a simple route to make sure everything is working properly
 
 const runningMessage = `Server running 👨‍💻 at http://localhost:${port}`;
