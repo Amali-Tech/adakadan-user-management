@@ -1,0 +1,1896 @@
+{
+  message: 'jwt expired',
+  level: 'error',
+  timestamp: '2023-09-13 12:59:11'
+}
+{
+  message: 'jwt expired',
+  level: 'error',
+  timestamp: '2023-09-13 12:59:41'
+}
+{
+  message: 'Error occurred whiles activating user',
+  level: 'error',
+  timestamp: '2023-09-13 13:01:28'
+}
+{
+  message: 'jwt expired',
+  level: 'error',
+  timestamp: '2023-09-13 13:02:23'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/services/users.service.ts\x1B[0m:\x1B[93m15\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1155: \x1B[0m'const' declarations must be initialized.\r\n" +
+    '\r\n' +
+    '\x1B[7m15\x1B[0m       const date\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m            ~~~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:08:19'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:08:21'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/v1/users/services/users.service.ts\x1B[0m:\x1B[93m16\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1003: \x1B[0mIdentifier expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m16\x1B[0m       await prisma.\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   \x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:08:42'
+}
+{
+  message: 'invalid token',
+  level: 'error',
+  timestamp: '2023-09-13 13:16:28'
+}
+{
+  message: 'Invalid link, please register',
+  level: 'error',
+  timestamp: '2023-09-13 13:18:36'
+}
+{
+  message: 'Invalid link, please register',
+  level: 'error',
+  timestamp: '2023-09-13 13:19:18'
+}
+{
+  message: 'Invalid link, please register',
+  level: 'error',
+  timestamp: '2023-09-13 13:19:44'
+}
+{
+  message: 'invalid token',
+  level: 'error',
+  timestamp: '2023-09-13 13:20:13'
+}
+{
+  message: 'Invalid link, please register',
+  level: 'error',
+  timestamp: '2023-09-13 13:20:58'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m107\x1B[0m:\x1B[93m52\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'id'.\r\n" +
+    '\r\n' +
+    '\x1B[7m107\x1B[0m       const user = await usersService.activateUser(id, req.body);\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                                   ~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:15'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m52\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'id'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m       const user = await usersService.activateUser(id, req.body);\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                                   ~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:33'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:37'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:38'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:40'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:42'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:43'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:45'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:46'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:48'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m122\x1B[0m:\x1B[93m52\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'id'.\r\n" +
+    '\r\n' +
+    '\x1B[7m122\x1B[0m       const user = await usersService.activateUser(id, req.body);\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                                   ~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:52'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:53'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:54'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:21:55'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m122\x1B[0m:\x1B[93m52\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'id'.\r\n" +
+    '\r\n' +
+    '\x1B[7m122\x1B[0m       const user = await usersService.activateUser(id, req.body);\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                                   ~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:04'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:06'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:07'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:08'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:09'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:11'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:12'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:13'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:14'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:15'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:17'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:18'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:19'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:20'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:21'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:22'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:23'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:25'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:26'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:27'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:28'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:29'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:30'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:31'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:33'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:34'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:35'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:36'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:37'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:39'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:40'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:41'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:42'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:43'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:44'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:45'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:46'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:47'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:48'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:50'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:51'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:52'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:53'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:55'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:56'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:58'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:22:59'
+}
+{
+  message: 'Invalid link, please register',
+  level: 'error',
+  timestamp: '2023-09-13 13:23:30'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m116\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'lse'.\r\n" +
+    '\r\n' +
+    '\x1B[7m116\x1B[0m       lse if (err instanceof JsonWebTokenError) {\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m      ~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m116\x1B[0m:\x1B[93m7\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1435: \x1B[0mUnknown keyword or identifier. Did you mean 'else'?\r\n" +
+    '\r\n' +
+    '\x1B[7m116\x1B[0m       lse if (err instanceof JsonWebTokenError) {\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m      ~~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:24:07'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:24:09'
+}
+{
+  message: 'Invalid link, please register',
+  level: 'error',
+  timestamp: '2023-09-13 13:24:32'
+}
+{
+  message: 'invalid token',
+  level: 'error',
+  timestamp: '2023-09-13 13:26:29'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/users.route.config.ts\x1B[0m:\x1B[93m36\x1B[0m:\x1B[93m139\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'forgotPassword' does not exist on type 'UserController'.\r\n" +
+    '\r\n' +
+    "\x1B[7m36\x1B[0m       .post(body('email').isEmail().notEmpty().withMessage('Email is required'),usersMiddleware.verifyRequestFieldsErrors,usersController.forgotPassword);\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m                                                                                                                                          ~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/v1/users/users.route.config.ts\x1B[0m:\x1B[93m51\x1B[0m:\x1B[93m23\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'newPassword' does not exist on type 'UserController'.\r\n" +
+    '\r\n' +
+    '\x1B[7m51\x1B[0m       usersController.newPassword\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                      ~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/v1/users/users.route.config.ts\x1B[0m:\x1B[93m93\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2551: \x1B[0mProperty 'patch' does not exist on type 'UserController'. Did you mean 'catch'?\r\n" +
+    '\r\n' +
+    '\x1B[7m93\x1B[0m         usersController.patch\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m7\x1B[0m\r\n' +
+    '    \x1B[7m109\x1B[0m     } catch (err) {\r\n' +
+    '    \x1B[7m   \x1B[0m \x1B[96m      ~~~~~\x1B[0m\r\n' +
+    "    'catch' is declared here.\r\n" +
+    "\x1B[96msrc/v1/users/users.route.config.ts\x1B[0m:\x1B[93m100\x1B[0m:\x1B[93m31\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'removeUser' does not exist on type 'UserController'.\r\n" +
+    '\r\n' +
+    '\x1B[7m100\x1B[0m       .delete(usersController.removeUser)\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                              ~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/v1/users/users.route.config.ts\x1B[0m:\x1B[93m103\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'put' does not exist on type 'UserController'.\r\n" +
+    '\r\n' +
+    '\x1B[7m103\x1B[0m         usersController.put\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                        ~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/v1/users/users.route.config.ts\x1B[0m:\x1B[93m107\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2551: \x1B[0mProperty 'patch' does not exist on type 'UserController'. Did you mean 'catch'?\r\n" +
+    '\r\n' +
+    '\x1B[7m107\x1B[0m         usersController.patch\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m7\x1B[0m\r\n' +
+    '    \x1B[7m109\x1B[0m     } catch (err) {\r\n' +
+    '    \x1B[7m   \x1B[0m \x1B[96m      ~~~~~\x1B[0m\r\n' +
+    "    'catch' is declared here.\r\n" +
+    "\x1B[96msrc/v1/users/users.route.config.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m28\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'getCloudinarySignature' does not exist on type 'UserController'.\r\n" +
+    '\r\n' +
+    '\x1B[7m111\x1B[0m       .get(usersController.getCloudinarySignature)\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                           ~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/v1/users/users.route.config.ts\x1B[0m:\x1B[93m125\x1B[0m:\x1B[93m25\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'addProfilePic' does not exist on type 'UserController'.\r\n" +
+    '\r\n' +
+    '\x1B[7m125\x1B[0m         usersController.addProfilePic\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                        ~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96msrc/v1/users/users.route.config.ts\x1B[0m:\x1B[93m127\x1B[0m:\x1B[93m31\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2339: \x1B[0mProperty 'deleteProfilePic' does not exist on type 'UserController'.\r\n" +
+    '\r\n' +
+    '\x1B[7m127\x1B[0m       .delete(usersController.deleteProfilePic);\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                              ~~~~~~~~~~~~~~~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:27:36'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:27:37'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:27:39'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:27:40'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:27:42'
+}
+{
+  message: 'Invalid link, please register',
+  level: 'error',
+  timestamp: '2023-09-13 13:30:09'
+}
+{
+  message: 'Invalid link, please register',
+  level: 'error',
+  timestamp: '2023-09-13 13:30:52'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m100\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2769: \x1B[0mNo overload matches this call.\r\n' +
+    "  Overload 1 of 3, '(token: string, options: DecodeOptions & { complete: true; }): Jwt', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { complete: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ complete: true; }'.\r\n" +
+    "  Overload 2 of 3, '(token: string, options: DecodeOptions & { json: true; }): JwtPayload', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { json: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ json: true; }'.\r\n" +
+    "  Overload 3 of 3, '(token: string, options?: DecodeOptions): string | JwtPayload', gave the following error.\r\n" +
+    "    Type 'string' has no properties in common with type 'DecodeOptions'.\r\n" +
+    '\r\n' +
+    '\x1B[7m100\x1B[0m         process.env.MAIL_TOKEN\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:31:55'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:31:56'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:31:58'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:31:59'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:00'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:02'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:03'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:04'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:06'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:07'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:08'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:09'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:11'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:12'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:13'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:14'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:16'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:17'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:18'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:19'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:20'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:21'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:23'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:25'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:27'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:28'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:29'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:30'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:31'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:33'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:34'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:35'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:37'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:38'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:40'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:41'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:42'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:43'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:44'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:46'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:47'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:49'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:50'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:51'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:52'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:53'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:55'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:56'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:58'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:32:59'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:00'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:01'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:02'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:04'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:05'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:06'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:08'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:09'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:10'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:12'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:13'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:14'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:15'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:17'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:19'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:20'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:21'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:22'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:24'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:25'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:27'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:28'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m100\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2769: \x1B[0mNo overload matches this call.\r\n' +
+    "  Overload 1 of 3, '(token: string, options: DecodeOptions & { complete: true; }): Jwt', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { complete: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ complete: true; }'.\r\n" +
+    "  Overload 2 of 3, '(token: string, options: DecodeOptions & { json: true; }): JwtPayload', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { json: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ json: true; }'.\r\n" +
+    "  Overload 3 of 3, '(token: string, options?: DecodeOptions): string | JwtPayload', gave the following error.\r\n" +
+    "    Type 'string' has no properties in common with type 'DecodeOptions'.\r\n" +
+    '\r\n' +
+    '\x1B[7m100\x1B[0m         process.env.MAIL_TOKEN\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m16\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1109: \x1B[0mExpression expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m111\x1B[0m         return throw new AppError({\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m               ~~~~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:32'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m100\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2769: \x1B[0mNo overload matches this call.\r\n' +
+    "  Overload 1 of 3, '(token: string, options: DecodeOptions & { complete: true; }): Jwt', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { complete: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ complete: true; }'.\r\n" +
+    "  Overload 2 of 3, '(token: string, options: DecodeOptions & { json: true; }): JwtPayload', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { json: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ json: true; }'.\r\n" +
+    "  Overload 3 of 3, '(token: string, options?: DecodeOptions): string | JwtPayload', gave the following error.\r\n" +
+    "    Type 'string' has no properties in common with type 'DecodeOptions'.\r\n" +
+    '\r\n' +
+    '\x1B[7m100\x1B[0m         process.env.MAIL_TOKEN\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:36'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:37'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:39'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:40'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:42'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:43'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:45'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:47'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:49'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:50'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:51'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:52'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:54'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:55'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:56'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:57'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:33:58'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:00'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:01'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:02'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:04'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:05'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:07'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:08'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:09'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:10'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:12'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:13'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:14'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:15'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:16'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:18'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:19'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:20'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:21'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:22'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:24'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:25'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:26'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:27'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:28'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:30'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:31'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:32'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:33'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:35'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:36'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:38'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:39'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:41'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:42'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:44'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:45'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:47'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:48'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:49'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:51'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:52'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:53'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:54'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:56'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:57'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:34:59'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:00'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:02'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:03'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:04'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:05'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:07'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:08'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:09'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:10'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:11'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:12'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:14'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:15'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:16'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:18'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m100\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2769: \x1B[0mNo overload matches this call.\r\n' +
+    "  Overload 1 of 3, '(token: string, options: DecodeOptions & { complete: true; }): Jwt', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { complete: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ complete: true; }'.\r\n" +
+    "  Overload 2 of 3, '(token: string, options: DecodeOptions & { json: true; }): JwtPayload', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { json: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ json: true; }'.\r\n" +
+    "  Overload 3 of 3, '(token: string, options?: DecodeOptions): string | JwtPayload', gave the following error.\r\n" +
+    "    Type 'string' has no properties in common with type 'DecodeOptions'.\r\n" +
+    '\r\n' +
+    '\x1B[7m100\x1B[0m         process.env.MAIL_TOKEN\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m107\x1B[0m:\x1B[93m52\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'id'.\r\n" +
+    '\r\n' +
+    '\x1B[7m107\x1B[0m       const user = await usersService.activateUser(id, req.body);\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                                   ~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:26'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:28'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m100\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2769: \x1B[0mNo overload matches this call.\r\n' +
+    "  Overload 1 of 3, '(token: string, options: DecodeOptions & { complete: true; }): Jwt', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { complete: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ complete: true; }'.\r\n" +
+    "  Overload 2 of 3, '(token: string, options: DecodeOptions & { json: true; }): JwtPayload', gave the following error.\r\n" +
+    "    Argument of type 'string' is not assignable to parameter of type 'DecodeOptions & { json: true; }'.\r\n" +
+    "      Type 'string' is not assignable to type '{ json: true; }'.\r\n" +
+    "  Overload 3 of 3, '(token: string, options?: DecodeOptions): string | JwtPayload', gave the following error.\r\n" +
+    "    Type 'string' has no properties in common with type 'DecodeOptions'.\r\n" +
+    '\r\n' +
+    '\x1B[7m100\x1B[0m         process.env.MAIL_TOKEN\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m        ~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:37'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:39'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:40'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:42'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:43'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:44'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:46'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:47'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:48'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:50'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:51'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:52'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:54'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:55'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 13:35:56'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m132\x1B[0m:\x1B[93m46\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'id'.\r\n" +
+    '\r\n' +
+    '\x1B[7m132\x1B[0m       let user = await usersService.readById(id);\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                             ~~\x1B[0m\r\n',
+  level: 'error',
+  timestamp: '2023-09-13 17:19:52'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m129\x1B[0m:\x1B[93m12\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'decoded'. Did you mean 'decode'?\r\n" +
+    '\r\n' +
+    '\x1B[7m129\x1B[0m       if (!decoded.id) {\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m           ~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m128\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m128\x1B[0m       const decode = jwt.decode(req.params.token) as JwtPayload;\r\n' +
+    '    \x1B[7m   \x1B[0m \x1B[96m            ~~~~~~\x1B[0m\r\n' +
+    "    'decode' is declared here.\r\n" +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m136\x1B[0m:\x1B[93m11\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'decoded'. Did you mean 'decode'?\r\n" +
+    '\r\n' +
+    '\x1B[7m136\x1B[0m       if (decoded.payload.exp < currentTimestamp) {\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m          ~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m128\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m128\x1B[0m       const decode = jwt.decode(req.params.token) as JwtPayload;\r\n' +
+    '    \x1B[7m   \x1B[0m \x1B[96m            ~~~~~~\x1B[0m\r\n' +
+    "    'decode' is declared here.\r\n",
+  level: 'error',
+  timestamp: '2023-09-13 17:23:42'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:44'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:45'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:46'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:48'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:49'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:50'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:51'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:53'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:54'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:55'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:56'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:57'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:23:59'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:00'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:01'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:02'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:04'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:05'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:06'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:08'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:09'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:10'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:11'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:12'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:13'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:15'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:16'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:17'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:19'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:20'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:21'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:23'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:24'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:26'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:27'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:28'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:29'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:30'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:32'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:33'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:34'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:35'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:36'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:38'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:39'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:40'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:41'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:42'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:43'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:45'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:47'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:48'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:50'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:51'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:52'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:53'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:54'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:55'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:57'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:58'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:24:59'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:00'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:01'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:02'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:03'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:04'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:06'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:07'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:08'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:09'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:10'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:11'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m142\x1B[0m:\x1B[93m46\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'decode'. Did you mean 'decoded'?\r\n" +
+    '\r\n' +
+    '\x1B[7m142\x1B[0m       let user = await usersService.readById(decode.id);\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                             ~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m128\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m128\x1B[0m       const decoded = jwt.decode(req.params.token) as JwtPayload;\r\n' +
+    '    \x1B[7m   \x1B[0m \x1B[96m            ~~~~~~~\x1B[0m\r\n' +
+    "    'decoded' is declared here.\r\n",
+  level: 'error',
+  timestamp: '2023-09-13 17:25:17'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:18'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:20'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:21'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:22'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:23'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:25'
+}
+{
+  message: '⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m142\x1B[0m:\x1B[93m46\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'decode'. Did you mean 'decoded'?\r\n" +
+    '\r\n' +
+    '\x1B[7m142\x1B[0m       let user = await usersService.readById(decode.id);\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                                             ~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96msrc/v1/users/controller/users.controller.ts\x1B[0m:\x1B[93m128\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m128\x1B[0m       const decoded = jwt.decode(req.params.token) as JwtPayload;\r\n' +
+    '    \x1B[7m   \x1B[0m \x1B[96m            ~~~~~~~\x1B[0m\r\n' +
+    "    'decoded' is declared here.\r\n",
+  level: 'error',
+  timestamp: '2023-09-13 17:25:30'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:31'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:32'
+}
+{
+  message: 'Missing credentials for "PLAIN"',
+  level: 'error',
+  timestamp: '2023-09-13 17:25:33'
+}
+{
+  message: "Cannot read properties of null (reading 'id')",
+  level: 'error',
+  timestamp: '2023-09-13 20:46:44'
+}
+{
+  message: "Cannot read properties of null (reading 'id')",
+  level: 'error',
+  timestamp: '2023-09-13 20:49:21'
+}

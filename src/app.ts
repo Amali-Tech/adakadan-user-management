@@ -18,12 +18,12 @@ export const versions = {
 
 // this is a simple route to make sure everything is working properly
 
-const runningMessage = `<h1>Server running 👨‍💻 at http://localhost:${port}<h1>`;
+const runningMessage = `Server running 👨‍💻 at http://localhost:${port}`;
 app.get("/", (req: express.Request, res: express.Response) => {
   res.status(200).send(runningMessage);
 });
 app.use("*", (req: express.Request, res: express.Response) => {
-  res.status(404).send("<h1>Page not found 🖐🏽<h1>");
+  res.status(404).send("Page not found 🖐🏽");
 });
 
 (async () => {

@@ -33,8 +33,17 @@ export class UsersRoutes extends CommonRoutesConfig {
     );
     this.app
       .route(`${this.versions.v1}/user/forgot-password`)
-      .post(body('email').isEmail().notEmpty().withMessage('Email is required'),usersMiddleware.verifyRequestFieldsErrors,usersController.forgotPassword);
+      .post(
+        body('email').isEmail().notEmpty().withMessage('Email is required'),
+        usersMiddleware.verifyRequestFieldsErrors,
+        usersController.forgotPassword
+      );
     this.app.route(`/user/reset-password/:token`).post(
+      body('token')
+        .notEmpty()
+        .withMessage('Token is required')
+        .isString()
+        .withMessage('Token must be a string'),
       body('password')
         .isString()
         .notEmpty()

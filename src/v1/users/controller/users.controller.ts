@@ -91,16 +91,28 @@ class UserController {
     next: express.NextFunction
   ) {
     try {
-      const { id } = jwt.verify(
-        req.body.token,
-        process.env.MAIL_TOKEN
-      ) as JwtPayload;
+      const decoded = jwt.decode(req.body.token, {
+        complete: true,
+      }) as JwtPayload;
+      if (!decoded) {
+        throw new AppError({
+          httpCode: HttpCode.BAD_REQUEST,
+          description: 'Invalid link, please register',
+        });
+      }
+      const currentTimestamp = Math.floor(Date.now() / 1000);
+      if (decoded.payload.exp < currentTimestamp) {
+        throw new AppError({
+          httpCode: HttpCode.UNAUTHORIZED,
+          description: 'Expired link, please register again',
+        });
+      }
 
       delete req.body.confirmPassword;
       delete req.body.token;
       req.body.isActivated = true;
       req.body.password = await usersService.hashPassword(req.body.password);
-      const user = await usersService.activateUser(id, req.body);
+      const user = await usersService.activateUser(decoded.id, req.body);
       return res.status(201).send({ success: true, data: user });
     } catch (err) {
       next(err);
@@ -113,17 +125,25 @@ class UserController {
   ) {
     // Get the token through request body or params
     try {
-      const { id } = jwt.verify(
-        req.params.token,
-        process.env.MAIL_TOKEN
-      ) as JwtPayload;
-
-      let user = await usersService.readById(id);
+      const decoded = jwt.decode(req.body.token) as JwtPayload;
+      if (!decoded) {
+        throw new AppError({
+          httpCode: HttpCode.BAD_REQUEST,
+          description: 'Invalid link, try again',
+        });
+      }
+      const currentTimestamp = Math.floor(Date.now() / 1000);
+      if (decoded.payload.exp < currentTimestamp) {
+        throw new AppError({
+          httpCode: HttpCode.UNAUTHORIZED,
+          description: 'Invalid link, please try again',
+        });
+      }
+      let user = await usersService.readById(decoded.id);
       if (!user) {
         throw new AppError({
           httpCode: HttpCode.NOT_FOUND,
           description: 'User not found',
-          isOperational: true,
         });
       }
       const password = await usersService.hashPassword(req.body.password);

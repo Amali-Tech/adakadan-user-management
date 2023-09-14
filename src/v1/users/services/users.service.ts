@@ -12,6 +12,10 @@ const log: debug.IDebugger = debug('app:user-service');
 class UsersService implements CRUD {
   async create(resource: ICreateUserDto) {
     try {
+      const date = new Date(Date.now());
+      await prisma.user.deleteMany({
+        where: { AND: { isActivated: false, createdAt: { lt: date } } },
+      });
       return await prisma.user.create({ data: resource });
     } catch (err) {
       throw new AppError({
@@ -24,6 +28,13 @@ class UsersService implements CRUD {
   async activateUser(id: string, resource: Partial<IPatchUserDto>) {
     try {
       const user = await this.patchById(id, resource);
+
+      if (!user) {
+        throw new AppError({
+          httpCode: HttpCode.BAD_REQUEST,
+          description: 'Invalid link, please register',
+        });
+      }
       return omit(user, [
         'password',
         'createdAt',

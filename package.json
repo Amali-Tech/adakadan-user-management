@@ -34,7 +34,7 @@
     "test": "jest -c test/**test.ts",
     "test:coverage": "jest --coverage -c",
     "test-debug": "set DEBUG=app && npm test",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .ts, .js",
     "migrate": "npx prisma migrate dev",
     "generate": "npx prisma generate ",
     "update-db": "npx prisma db push",
@@ -62,6 +62,8 @@
     "winston": "^3.8.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@types/bcrypt": "^5.0.0",
     "@types/chai": "^4.3.5",
     "@types/compression": "^1.7.2",
@@ -80,6 +82,7 @@
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
     "prisma": "^4.15.0",

@@ -8,7 +8,7 @@ export abstract class CommonRoutesConfig {
     this.app = app;
     this.name = name;
     this.versions = {
-      v1: "api/v1"
+      v1: "/api/v1"
     }
     this.configureRoutes();
   }
