@@ -5,9 +5,9 @@ name: Adakadan_User_Management
 
 on:
   push:
-    branches: ['develop']
+    branches: ["develop"]
   pull_request:
-    branches: ['develop']
+    branches: ["develop"]
 
 jobs:
   build:
@@ -24,13 +24,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
       - run: node --version
       - run: yarn --version
       - run: yarn run build
-      - run:|
+      - run: |
           touch env
           echo "{{secrets.SSH_PRIVATE_KEY}}" > env
           cat env
