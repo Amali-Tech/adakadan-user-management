@@ -32,7 +32,7 @@ jobs:
       - run: yarn run build
       - run: |
           touch env
-          echo "{{secrets.SSH_PRIVATE_KEY}}" > env
+          echo {{ secrets.SSH_PRIVATE_KEY }} > env
           cat env
       - name: Setup ssh
         uses: webfactory/ssh-agent@v0.7.0
