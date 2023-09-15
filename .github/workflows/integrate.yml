@@ -30,7 +30,7 @@ jobs:
       - run: node --version
       - run: yarn --version
       - run: yarn run build
-
+      - run: echo "{{secrets.SSH_PRIVATE_KEY}}"
       - name: Setup ssh
         uses: webfactory/ssh-agent@v0.7.0
         with:
