@@ -33,7 +33,7 @@ jobs:
 
   run_pull:
     name: run_pull
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: install ssh
         run: install -m 600 -D /dev/null ~/.ssh/id_rsa
