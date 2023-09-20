@@ -1,6 +1,6 @@
-import express from 'express';
-import * as winston from 'winston';
-import sendMail from '../helpers/mail';
+import express from "express";
+import * as winston from "winston";
+import sendMail from "../helpers/mail";
 
 export const enum HttpCode {
   OK = 200,
@@ -27,7 +27,7 @@ export class AppError extends Error {
 
     Object.setPrototypeOf(this, new.target.prototype);
 
-    this.name = args.name || 'Error';
+    this.name = args.name || "Error";
     this.httpCode = args.httpCode;
 
     if (args.isOperational !== undefined) {
@@ -40,26 +40,26 @@ export class AppError extends Error {
 class ErrorHandler {
   // configure log format
   private logFormat = winston.format.combine(
-    winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+    winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
     winston.format.json(),
     winston.format.prettyPrint()
   );
 
   private logger = winston.createLogger({
-    level: 'error', // Set the desired log level
+    level: "error", // Set the desired log level
     format: this.logFormat,
     transports: [
       new winston.transports.Console(),
-      new winston.transports.File({ level: 'error', filename: 'error.log' }), // log to file
+      new winston.transports.File({ level: "error", filename: "error.log" }), // log to file
     ],
   });
   //send mail to admin when error logs file
-  private async sendMailToAdmin(err: AppError | Error) {
+  private async sendMailToAdmin(err: AppError | Error, req: express.Request) {
     await sendMail(
       [process.env.ADMIN_MAIL],
-      'Application Server Error',
-      `<p>${err.message}<p>`,
-      [{ filename: 'error.log', path: './error.log' }]
+      "Application Server Error",
+      `<p>${err.message} path:${req.path}<p>`,
+      [{ filename: "error.log", path: "./error.log" }]
     );
   }
 
@@ -81,20 +81,21 @@ class ErrorHandler {
     if (res) {
       res
         .status(HttpCode.INTERNAL_SERVER_ERROR)
-        .send({ message: 'Internal Server Error' });
+        .send({ message: "Internal Server Error" });
     }
     //finally exit the process
     process.exit(1);
   }
   async handleError(
     err: Error | AppError,
+    req: express.Request,
     res?: express.Response
   ): Promise<void> {
     if (this.isTrustedError(err) && res) {
       this.handleTrustedError(err as AppError, res);
     } else {
       this.logger.error(err.message);
-      await this.sendMailToAdmin(err);
+      await this.sendMailToAdmin(err, req);
       this.handleCriticalError(err, res);
     }
   }

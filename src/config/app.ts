@@ -74,7 +74,7 @@ class App {
         res: express.Response,
         next: express.NextFunction
       ) => {
-        await errorHandler.handleError(err, res);
+        await errorHandler.handleError(err, req, res);
       }
     );
   }

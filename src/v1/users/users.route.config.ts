@@ -94,7 +94,7 @@ export class UsersRoutes extends CommonRoutesConfig {
         body('surname').optional().isString(),
         body('AccountType')
           .optional()
-          .isIn(['Management', 'Client'])
+          .isIn(['Management', 'Client', "Agent"])
           .withMessage(
             `Account can either be Management, Agent and Client only`
           ),

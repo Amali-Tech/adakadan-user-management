@@ -5,9 +5,9 @@ name: Adakadan_User_Management
 
 on:
   push:
-    branches: ['develop']
+    branches: ["develop"]
   pull_request:
-    branches: ['develop']
+    branches: ["develop"]
 
 jobs:
   build:
@@ -24,28 +24,25 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
       - run: node --version
       - run: yarn --version
       - run: yarn run build
 
-    #   - name: Setup ssh
-    #     uses: webfactory/ssh-agent@v0.7.0
-    #     with:
-    #       ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+  run_pull:
+    name: run_pull
+    runs-on: ubuntu-latest
+    steps:
+      - name: install ssh keys
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{secrets.SSH_PRIVATE_KEY}}" > ~/.ssh/id_rsa
+          ssh-keyscan -H ${{secrets.SSH_HOST}} > ~/.ssh/known_hosts
+      - name: connect and pull
+        run: |
+          ssh ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}} "cd ${{secrets.WORK_DIR}} && git checkout ${{secrets.MAIN_BRANCH}} && git pull"
+      - name: cleanup
+        run: rm -rf !/.ssh
 
-    #   - name: SSH into EC2 Instance
-    #     uses: appleboy/ssh-action@master
-    #     with:
-    #       host: ${{ secrets.EC2_HOST }}
-    #       username: ${{ secrets.EC2_USERNAME }}
-    #       key: ${{ secrets.SSH_PRIVATE_KEY }}
-    #       script: |
-    #         cd sojourn-cabins-backend
-    #         git pull
-
-    #         docker-compose down
-    #         docker-compose build --no-cache
-    #         docker-compose up -d
