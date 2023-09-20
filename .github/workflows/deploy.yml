@@ -32,7 +32,7 @@ jobs:
       - run: yarn run build
 
   run_pull:
-    name: run_pull
+    name: pull_repo_and_spin_conatainer
     runs-on: ubuntu-latest
     steps:
       - name: install ssh keys
@@ -43,6 +43,8 @@ jobs:
       - name: connect and pull
         run: |
           ssh ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}} "cd ${{secrets.WORK_DIR}} && git checkout ${{secrets.MAIN_BRANCH}} && git pull"
+      - name: Run Docker Compose
+        run: |
+          ssh ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}} "cd ${{secrets.WORK_DIR}} && docker-compose -f docker-compose.deploy.yaml up --build -d"
       - name: cleanup
         run: rm -rf !/.ssh
-
