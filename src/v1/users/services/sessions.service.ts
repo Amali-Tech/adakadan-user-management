@@ -3,6 +3,7 @@ import prisma from "../../../prisma";
 import usersService from "./users.service";
 import jwtUtils from "../../../helpers/jwt";
 import { AppError, HttpCode } from "../../../config/errorHandler";
+import { User } from "@prisma/client";
 
 class SessionsService {
   async createSession(userId: string, userAgent: string) {
@@ -129,7 +130,7 @@ class SessionsService {
         "createdAt",
         "updatedAt",
         "getNewsletters",
-      ]);
+      ]) as User;
     } catch (err) {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
