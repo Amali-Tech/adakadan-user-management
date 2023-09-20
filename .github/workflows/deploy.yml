@@ -46,16 +46,3 @@ jobs:
       - name: cleanup
         run: rm -rf !/.ssh
 
-      # - name: SSH into EC2 Instance
-      #   uses: appleboy/ssh-action@master
-      #   with:
-      #     host: ${{ secrets.EC2_HOST }}
-      #     username: ${{ secrets.EC2_USERNAME }}
-      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     script: |
-      #       cd adakadan-user-management
-      #       git pull
-
-      #       docker-compose down
-      #       docker-compose build --no-cache
-      #       docker-compose up -d
