@@ -158,6 +158,7 @@ class UsersService implements CRUD {
     try {
       return await prisma.user.findFirst({ where: { email } });
     } catch (err) {
+      console.log(err)
       if (err.code == 'P2023') {
         throw new AppError({
           httpCode: HttpCode.BAD_REQUEST,

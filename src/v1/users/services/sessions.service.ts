@@ -1,8 +1,8 @@
-import { omit, get } from 'lodash';
-import prisma from '../../../prisma';
-import usersService from './users.service';
-import jwtUtils from '../../../helpers/jwt';
-import { AppError, HttpCode } from '../../../config/errorHandler';
+import { omit, get } from "lodash";
+import prisma from "../../../prisma";
+import usersService from "./users.service";
+import jwtUtils from "../../../helpers/jwt";
+import { AppError, HttpCode } from "../../../config/errorHandler";
 
 class SessionsService {
   async createSession(userId: string, userAgent: string) {
@@ -13,7 +13,7 @@ class SessionsService {
     } catch (err) {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
-        description: 'Error occurred whiles creating session',
+        description: "Error occurred whiles creating session",
       });
     }
   }
@@ -23,15 +23,15 @@ class SessionsService {
         where: { AND: [{ valid }, { userId }] },
       });
     } catch (err) {
-      if (err.code == 'P2023') {
+      if (err.code == "P2023") {
         throw new AppError({
           httpCode: HttpCode.BAD_REQUEST,
-          description: 'Invalid UUID',
+          description: "Invalid UUID",
         });
       }
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
-        description: 'Error occurred during log in',
+        description: "Error occurred during log in",
       });
     }
   }
@@ -43,22 +43,22 @@ class SessionsService {
     valid: boolean;
   }) {
     try {
-      const session =  await prisma.session.update({
+      const session = await prisma.session.update({
         data: { valid },
         where: { id: sessionId },
-        include: {user: true},
+        include: { user: true },
       });
-      await usersService.patchById(session.user.id, {online: false})
+      await usersService.patchById(session.user.id, { online: false });
     } catch (err) {
-      if (err.code == 'P2023') {
+      if (err.code == "P2023") {
         throw new AppError({
           httpCode: HttpCode.BAD_REQUEST,
-          description: 'Invalid UUID',
+          description: "Invalid UUID",
         });
       }
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
-        description: 'Error occurred during log in',
+        description: "Error occurred during log in",
       });
     }
   }
@@ -73,10 +73,10 @@ class SessionsService {
         process.env.REFRESH_TOKEN_SECRET
       );
 
-      if (!decoded || !get(decoded, 'session')) return false;
+      if (!decoded || !get(decoded, "session")) return false;
 
       const session = await prisma.session.findFirst({
-        where: { id: get(decoded, 'session') },
+        where: { id: get(decoded, "session") },
         include: { user: true },
       });
 
@@ -88,15 +88,15 @@ class SessionsService {
       );
       return accessToken;
     } catch (err) {
-      if (err.code == 'P2023') {
+      if (err.code == "P2023") {
         throw new AppError({
           httpCode: HttpCode.BAD_REQUEST,
-          description: 'Invalid UUID',
+          description: "Invalid UUID",
         });
       }
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
-        description: 'Error occurred during acess token reissurance',
+        description: "Error occurred during acess token reissurance",
       });
     }
   }
@@ -124,16 +124,16 @@ class SessionsService {
         online: true,
       });
       return omit(onlineUser, [
-        'password',
-        'isActivated',
-        'createdAt',
-        'updatedAt',
-        'getNewsletters',
+        "password",
+        "isActivated",
+        "createdAt",
+        "updatedAt",
+        "getNewsletters",
       ]);
     } catch (err) {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
-        description: 'Error occurred during log in',
+        description: "Error occurred during log in",
       });
     }
   }
