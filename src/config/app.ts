@@ -1,16 +1,16 @@
-import express from 'express';
-import { UsersRoutes } from '../v1/users/users.route.config';
-import { SessionsRoutes } from '../v1/users/sessions.route.config';
-import cors from 'cors';
-import { CommonRoutesConfig } from '../common/common.routes.config';
-import debug from 'debug';
-import * as winston from 'winston';
-import * as expressWinston from 'express-winston';
-import helmet from 'helmet';
-import compression from 'compression';
-import errorHandler from './errorHandler';
+import express from "express";
+import { UsersRoutes } from "../v1/users/users.route.config";
+import { SessionsRoutes } from "../v1/users/sessions.route.config";
+import cors from "cors";
+import { CommonRoutesConfig } from "../common/common.routes.config";
+import debug from "debug";
+import * as winston from "winston";
+import * as expressWinston from "express-winston";
+import helmet from "helmet";
+import compression from "compression";
+import errorHandler from "./errorHandler";
 
-const debugLog: debug.IDebugger = debug('app:configuration');
+const debugLog: debug.IDebugger = debug("app:configuration");
 // here we are preparing the expressWinston logging middleware configuration,
 // which will automatically log all HTTP requests handled by Express.js
 const loggerOptions: expressWinston.LoggerOptions = {
@@ -25,8 +25,8 @@ const loggerOptions: expressWinston.LoggerOptions = {
 
 if (!process.env.DEBUG) {
   loggerOptions.meta = false; // when not debugging, log requests as one-liners
-  if (typeof global.it === 'function') {
-    loggerOptions.level = 'http'; // for non-debug test runs, squelch entirely
+  if (typeof global.it === "function") {
+    loggerOptions.level = "http"; // for non-debug test runs, squelch entirely
   }
 }
 
@@ -60,8 +60,8 @@ class App {
     this.app.use(cors());
     //helmet for security purposes
     this.app.use(helmet());
-    // compression for lighter and fast response 
-    this.app.use(compression())
+    // compression for lighter and fast response
+    this.app.use(compression());
     // initialize the logger with the above configuration
     this.app.use(expressWinston.logger(loggerOptions));
   }
@@ -74,7 +74,7 @@ class App {
         res: express.Response,
         next: express.NextFunction
       ) => {
-        await errorHandler.handleError(err, req, res);
+        await errorHandler.handleError(err, res);
       }
     );
   }

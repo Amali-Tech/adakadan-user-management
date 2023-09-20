@@ -54,11 +54,11 @@ class ErrorHandler {
     ],
   });
   //send mail to admin when error logs file
-  private async sendMailToAdmin(err: AppError | Error, req: express.Request) {
+  private async sendMailToAdmin(err: AppError | Error) {
     await sendMail(
       [process.env.ADMIN_MAIL],
       "Application Server Error",
-      `<p>${err.message} path:${req.path}<p>`,
+      `<p>${err.message}<p>`,
       [{ filename: "error.log", path: "./error.log" }]
     );
   }
@@ -88,14 +88,13 @@ class ErrorHandler {
   }
   async handleError(
     err: Error | AppError,
-    req: express.Request,
     res?: express.Response
   ): Promise<void> {
     if (this.isTrustedError(err) && res) {
       this.handleTrustedError(err as AppError, res);
     } else {
       this.logger.error(err.message);
-      await this.sendMailToAdmin(err, req);
+      await this.sendMailToAdmin(err);
       this.handleCriticalError(err, res);
     }
   }
