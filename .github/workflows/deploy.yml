@@ -32,7 +32,7 @@ jobs:
       - run: yarn run build
 
   run_pull:
-    name: run_pull
+    name: pull_repo_into_ec2
     runs-on: ubuntu-latest
     steps:
       - name: install ssh keys
@@ -45,4 +45,3 @@ jobs:
           ssh ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}} "cd ${{secrets.WORK_DIR}} && git checkout ${{secrets.MAIN_BRANCH}} && git pull"
       - name: cleanup
         run: rm -rf !/.ssh
-

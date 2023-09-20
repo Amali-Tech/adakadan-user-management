@@ -1,35 +1,40 @@
-import express from 'express';
-import sessionsService from '../services/sessions.service';
-import jwtUtils from '../../../helpers/jwt';
-import { AppError, HttpCode } from '../../../config/errorHandler';
+import express from "express";
+import sessionsService from "../services/sessions.service";
+import jwtUtils from "../../../helpers/jwt";
+import { AppError, HttpCode } from "../../../config/errorHandler";
+import { User } from "@prisma/client";
 
 class SessionsController {
-  async createSession(req: express.Request, res: express.Response , next: express.NextFunction) {
+  async createSession(
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ) {
     try {
       //validate user password
-      const user = await sessionsService.validatePassword(req.body);
-
+      const user = (await sessionsService.validatePassword(req.body)) as User;
+      const { id } = user;
       if (!user) {
         throw new AppError({
           httpCode: HttpCode.BAD_REQUEST,
-          description: 'Invalid credentials',
+          description: "Invalid credentials",
         });
       }
-      
+
       // create session
       const session = await sessionsService.createSession(
-        user.id,
-        req.headers['user-agent']
+        id,
+        req.headers["user-agent"]
       );
       // create an accessToken
       const accessToken = await jwtUtils.signJWT(
-        { ...user, session: session.id },
+        { id, session: session.id },
         { expiresIn: process.env.ACCESS_TOKEN_TTL }
       );
 
       // create an refreshToken
       const refreshToken = await jwtUtils.signJWT(
-        { ...user, session: session.id },
+        { id, session: session.id },
         { expiresIn: process.env.REFRESH_TOKEN_TTL }
       );
 
