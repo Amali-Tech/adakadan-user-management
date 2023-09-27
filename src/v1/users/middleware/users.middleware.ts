@@ -76,7 +76,7 @@ class UsersMiddleware {
     try {
       const user = await userService.readById(req.params.userId);
       if (user) {
-        next();
+        return next();
       }
       throw new AppError({
         httpCode: HttpCode.NOT_FOUND,

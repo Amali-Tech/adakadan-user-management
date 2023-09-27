@@ -201,6 +201,7 @@ class UserController {
   ) {
     try {
       const user = await usersService.getUserByEmail(req.body.email);
+      console.log(user);
       if (!user) {
         throw new AppError({
           httpCode: HttpCode.BAD_REQUEST,

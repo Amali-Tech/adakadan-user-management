@@ -38,7 +38,7 @@ export class UsersRoutes extends CommonRoutesConfig {
         usersMiddleware.verifyRequestFieldsErrors,
         usersController.forgotPassword
       );
-    this.app.route(`/user/reset-password/:token`).post(
+    this.app.route(`/user/reset-password/`).post(
       body('token')
         .notEmpty()
         .withMessage('Token is required')
