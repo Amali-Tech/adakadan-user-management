@@ -39,7 +39,7 @@ class SessionsController {
       );
 
       return res.send({
-        success: false,
+        success: true,
         data: user,
         accessToken,
         refreshToken,

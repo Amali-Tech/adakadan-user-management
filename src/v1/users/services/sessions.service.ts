@@ -120,17 +120,10 @@ class SessionsService {
         user.password
       );
       if (!isValid) return false;
-      const {
-        isActivated,
-        createdAt,
-        updatedAt,
-        getNewsletters,
-        ...loggedInUser
-      } = await usersService.patchById(user.id, {
+      const loggedUser = await usersService.patchById(user.id, {
         online: true,
       });
-      delete loggedInUser.password
-      return loggedInUser;
+      return loggedUser;
     } catch (err) {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
