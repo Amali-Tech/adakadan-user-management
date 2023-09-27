@@ -1,100 +1,100 @@
-import express from 'express';
-import { CommonRoutesConfig } from '../../common/common.routes.config';
-import usersController from './controller/users.controller';
-import usersMiddleware from './middleware/users.middleware';
-import authorise from '../../helpers/auth';
-import { body } from 'express-validator';
+import express from "express";
+import { CommonRoutesConfig } from "../../common/common.routes.config";
+import usersController from "./controller/users.controller";
+import usersMiddleware from "./middleware/users.middleware";
+import authorise from "../../helpers/auth";
+import { body } from "express-validator";
 
 export class UsersRoutes extends CommonRoutesConfig {
   constructor(app: express.Application) {
-    super(app, 'usersRoutes');
+    super(app, "usersRoutes");
   }
 
   configureRoutes() {
     this.app.route(`${this.versions.v1}/user/activate`).post(
-      body('token')
+      body("token")
         .notEmpty()
-        .withMessage('Token is required')
+        .withMessage("Token is required")
         .isString()
-        .withMessage('Token must be a string'),
-      body('password')
+        .withMessage("Token must be a string"),
+      body("password")
         .isString()
         .notEmpty()
-        .withMessage('Password is required'),
-      body('confirmPassword')
+        .withMessage("Password is required"),
+      body("confirmPassword")
         .custom((value, { req }) => {
           return value == req.body.passwor;
         })
-        .withMessage('Passwords is must be the same')
+        .withMessage("Passwords is must be the same")
         .isString()
         .notEmpty()
-        .withMessage('Confirm password is required'),
+        .withMessage("Confirm password is required"),
       usersController.activateUser
     );
     this.app
       .route(`${this.versions.v1}/user/forgot-password`)
       .post(
-        body('email').isEmail().notEmpty().withMessage('Email is required'),
+        body("email").isEmail().notEmpty().withMessage("Email is required"),
         usersMiddleware.verifyRequestFieldsErrors,
         usersController.forgotPassword
       );
-    this.app.route(`/user/reset-password/`).post(
-      body('token')
+    this.app.route(`${this.versions.v1}/user/reset-password/`).post(
+      body("token")
         .notEmpty()
-        .withMessage('Token is required')
+        .withMessage("Token is required")
         .isString()
-        .withMessage('Token must be a string'),
-      body('password')
+        .withMessage("Token must be a string"),
+      body("password")
         .isString()
         .notEmpty()
-        .withMessage('Password is required'),
-      body('confirmPassword')
+        .withMessage("Password is required"),
+      body("confirmPassword")
         .custom((value, { req }) => {
-          return value == req.body.passwor;
+          return value == req.body.password;
         })
-        .withMessage('Passwords is must be the same')
+        .withMessage("Passwords must be the same")
         .isString()
         .notEmpty()
-        .withMessage('Confirm is required'),
+        .withMessage("confirmPassword is required"),
       usersMiddleware.verifyRequestFieldsErrors,
       usersController.newPassword
     );
     this.app
       .route(`${this.versions.v1}/users`)
       .post(
-        body('firstName')
+        body("firstName")
           .isString()
           .notEmpty()
-          .withMessage('First name is required'),
-        body('otherName').optional().isString(),
-        body('surname')
+          .withMessage("First name is required"),
+        body("otherName").optional().isString(),
+        body("surname")
           .isString()
           .notEmpty()
-          .withMessage('Surname is required'),
-        body('email').isEmail().notEmpty().withMessage('Email is required'),
-        body('accountType')
-          .isIn(['Client', 'Management'])
+          .withMessage("Surname is required"),
+        body("email").isEmail().notEmpty().withMessage("Email is required"),
+        body("accountType")
+          .isIn(["Client", "Management"])
           .withMessage(`AccountType can either be Client or Management`)
           .notEmpty()
-          .withMessage('AccountType is required'),
+          .withMessage("AccountType is required"),
         usersMiddleware.verifyRequestFieldsErrors,
         usersMiddleware.validateSameEmailDoesntExist,
         usersController.createUser
       );
-    this.app.use('/users', usersMiddleware.deserializeUser);
-    this.app.use('/users', usersMiddleware.requireUser);
+    this.app.param("userId", usersMiddleware.deserializeUser);
+    this.app.param("userId", usersMiddleware.requireUser);
     this.app
       .route(`${this.versions.v1}/users`)
-      .get(authorise.adminOnly, usersController.listUsers);
+      .get(usersMiddleware.deserializeUser,usersMiddleware.requireUser, authorise.adminOnly, usersController.listUsers);
     this.app
       .route(`${this.versions.v1}/users/:userId`)
       .patch(
-        body('firstName').optional().isString(),
-        body('otherName').optional().isString(),
-        body('surname').optional().isString(),
-        body('AccountType')
+        body("firstName").optional().isString(),
+        body("otherName").optional().isString(),
+        body("surname").optional().isString(),
+        body("AccountType")
           .optional()
-          .isIn(['Management', 'Client', "Agent"])
+          .isIn(["Management", "Client", "Agent"])
           .withMessage(
             `Account can either be Management, Agent and Client only`
           ),
@@ -119,18 +119,18 @@ export class UsersRoutes extends CommonRoutesConfig {
       .route(`${this.versions.v1}/users/:userId/profileImages`)
       .get(usersController.getCloudinarySignature)
       .patch(
-        body('version')
+        body("version")
           .isString()
           .notEmpty()
-          .withMessage('Cloudinary version is required'),
-        body('public_id')
+          .withMessage("Cloudinary version is required"),
+        body("public_id")
           .isString()
           .notEmpty()
-          .withMessage('Cloudinary public id is required'),
-        body('signature')
+          .withMessage("Cloudinary public id is required"),
+        body("signature")
           .isString()
           .notEmpty()
-          .withMessage('Cloudinary signature is required'),
+          .withMessage("Cloudinary signature is required"),
         usersController.addProfilePic
       )
       .delete(usersController.deleteProfilePic);

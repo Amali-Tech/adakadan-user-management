@@ -1,9 +1,8 @@
-import { omit, get } from "lodash";
+import { get } from "lodash";
 import prisma from "../../../prisma";
 import usersService from "./users.service";
 import jwtUtils from "../../../helpers/jwt";
 import { AppError, HttpCode } from "../../../config/errorHandler";
-import { User } from "@prisma/client";
 
 class SessionsService {
   async createSession(userId: string, userAgent: string) {
@@ -121,17 +120,10 @@ class SessionsService {
         user.password
       );
       if (!isValid) return false;
-      const {
-        isActivated,
-        createdAt,
-        updatedAt,
-        getNewsletters,
-        ...loggedInUser
-      } = await usersService.patchById(user.id, {
+      const loggedUser = await usersService.patchById(user.id, {
         online: true,
       });
-      delete loggedInUser.password
-      return loggedInUser;
+      return loggedUser;
     } catch (err) {
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,

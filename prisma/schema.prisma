@@ -14,7 +14,7 @@ model User {
   email          String       @unique @db.Char(150)
   firstName      String       @map("first_name") @db.Char(150)
   otherName      String?      @map("other_name") @db.Char(150)
-  password       String?      
+  password       String?      @db.Text()
   surname        String       @db.Char(150)
   isActivated    Boolean      @default(false) @map("is_activated")
   online         Boolean      @default(false)
@@ -49,7 +49,7 @@ model Session {
   userId    String   @map("user_id")
   valid     Boolean  @default(true)
   userAgent String   @map("user_agent") @db.Char(250)
-  user      User     @relation(fields: [userId], references: [id])
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   createdAt DateTime @default(now()) @db.Timestamptz()
   updatedAt DateTime @updatedAt @db.Timestamptz()
 

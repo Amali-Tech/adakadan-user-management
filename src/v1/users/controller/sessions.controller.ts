@@ -11,7 +11,6 @@ class SessionsController {
     next: express.NextFunction
   ) {
     try {
-      console.log(req.body);
       //validate user password
       const user = (await sessionsService.validatePassword(req.body)) as User;
       const { id, accountType } = user;
@@ -40,7 +39,7 @@ class SessionsController {
       );
 
       return res.send({
-        success: false,
+        success: true,
         data: user,
         accessToken,
         refreshToken,

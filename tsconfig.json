@@ -11,6 +11,7 @@
     "skipLibCheck": true ,
     // "noUnusedLocals": true,
     "noErrorTruncation": true,
+    // "noImplicitAny": true
     
   },
   "include": [
