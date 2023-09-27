@@ -20,8 +20,8 @@ export class SessionsRoutes extends CommonRoutesConfig {
         usersMiddleware.verifyRequestFieldsErrors,
         sessionsController.createSession
       )
-      .get(sessionsController.getUserSession)
-      .delete(sessionsController.deleteUserSession);
+      .get(usersMiddleware.deserializeUser,sessionsController.getUserSession)
+      .delete(usersMiddleware.deserializeUser,sessionsController.deleteUserSession);
     return this.app;
   }
 }

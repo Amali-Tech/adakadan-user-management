@@ -11,9 +11,10 @@ class SessionsController {
     next: express.NextFunction
   ) {
     try {
+      console.log(req.body);
       //validate user password
       const user = (await sessionsService.validatePassword(req.body)) as User;
-      const { id } = user;
+      const { id, accountType } = user;
       if (!user) {
         throw new AppError({
           httpCode: HttpCode.BAD_REQUEST,
@@ -28,7 +29,7 @@ class SessionsController {
       );
       // create an accessToken
       const accessToken = await jwtUtils.signJWT(
-        { id, session: session.id },
+        { id,accountType, session: session.id },
         { expiresIn: process.env.ACCESS_TOKEN_TTL }
       );
 

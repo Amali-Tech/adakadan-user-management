@@ -156,15 +156,8 @@ class UsersService implements CRUD {
   }
   async getUserByEmail(email: string) {
     try {
-      return await prisma.user.findFirst({ where: { email } });
+      return await prisma.user.findUnique({ where: { email } });
     } catch (err) {
-      console.log(err)
-      if (err.code == 'P2023') {
-        throw new AppError({
-          httpCode: HttpCode.BAD_REQUEST,
-          description: 'Invalid UUID',
-        });
-      }
       throw new AppError({
         httpCode: HttpCode.INTERNAL_SERVER_ERROR,
         description: 'Error occurred whiles getting user',
