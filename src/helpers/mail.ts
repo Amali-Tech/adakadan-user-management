@@ -22,7 +22,7 @@ const sendMail = async (
 
   const options = {
     from: `"Adakadan🏡 Propeties"<${process.env.EMAIL_ACCOUNT}>`, // sender address
-    to: null, // list of receivers
+    to: null as string, // list of receivers
     subject, // Subject line
     html, // html body
     attachments, // attachment

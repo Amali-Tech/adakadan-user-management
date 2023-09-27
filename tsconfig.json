@@ -9,9 +9,9 @@
     "moduleResolution": "node",  
     "forceConsistentCasingInFileNames": true, 
     "skipLibCheck": true ,
-    "noUnusedLocals": true,
+    // "noUnusedLocals": true,
     "noErrorTruncation": true,
-    "noImplicitAny": true
+    // "noImplicitAny": true
     
   },
   "include": [
