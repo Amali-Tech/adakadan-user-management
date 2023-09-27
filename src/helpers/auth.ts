@@ -6,7 +6,6 @@ const log: debug.IDebugger = debug('app:users-authorisation');
 
 class Authorise {
   adminOnly = async (req: Request, res: Response, next: NextFunction) => {
-    console.log(res.locals.user);
     if (res.locals.user.accountType !== 'Admin') {
       throw new AppError({
         httpCode: HttpCode.FORBIDDEN,

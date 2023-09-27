@@ -1,9 +1,8 @@
-import { omit, get } from "lodash";
+import { get } from "lodash";
 import prisma from "../../../prisma";
 import usersService from "./users.service";
 import jwtUtils from "../../../helpers/jwt";
 import { AppError, HttpCode } from "../../../config/errorHandler";
-import { User } from "@prisma/client";
 
 class SessionsService {
   async createSession(userId: string, userAgent: string) {
